@@ -14,9 +14,12 @@
     $boolean=get_field('true_false');
     $text_informations=get_field('member_informations');
 
-    $stars=get_field('illustration_stars');
-    var_dump('$stars');
-    $glitters=get_field('illustration_glitters');
+    $stars=get_field('illustration_stars','option');
+    $stars_half=get_field('stars_half','option');
+    $glitters=get_field('illustration_glitters','option');
+
+    $texts_home=get_field('bloc_home');
+    $glitter_text=get_field('glitter_text','option');
 
 ?>
 <html>
@@ -86,12 +89,42 @@
             </div>
         </div>
         <div>
-            <img class="img"
-                src="<?php echo ($stars['sizes']["stars1"]);?>" 
-                height="<?php echo ($stars['sizes']["stars1-height"]);?>" 
-                width="<?php echo ($stars['sizes']["stars1-width"]);?>" 
+            <img class="stars-right"
+                src="<?php echo ($stars_half['sizes']["stars1"]);?>" 
+                height="<?php echo ($stars_half['sizes']["stars1-height"]);?>" 
+                width="<?php echo ($stars_half['sizes']["stars1-width"]);?>" 
+                alt="<?php echo ($stars_half['alt']);?>"
+            />
+
+            <img class="stars-center"
+                src="<?php echo ($stars['sizes']["stars2"]);?>" 
+                height="<?php echo ($stars['sizes']["stars2-height"]);?>" 
+                width="<?php echo ($stars['sizes']["stars2-width"]);?>" 
                 alt="<?php echo ($stars['alt']);?>"
             />
+            <?php
+
+                if ($texts_home) {
+                    foreach ($texts_home as $paragraph) {
+                        $title = $paragraph['title_bloc']; 
+                        $bloc = $paragraph['bloc_textarea']; 
+                        $button = $paragraph['text_button']; 
+            
+                        ?>
+                        <img class="glitters_texts"
+                            src="<?php echo ($glitter_text['sizes']["glitters_text"]);?>" 
+                            height="<?php echo ($glitter_text['sizes']["glitters_text-height"]);?>" 
+                            width="<?php echo ($glitter_text['sizes']["glitters_text-width"]);?>" 
+                            alt="<?php echo ($glitter_text['alt']);?>"
+                        />
+                        <h2><?php echo($title) ;?></h2>
+                        <p><?php echo($bloc);?></p>
+
+                    <?php
+                    }
+                }
+            ?>
+
         </div>
     </body>
 
