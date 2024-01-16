@@ -1,0 +1,155 @@
+footer{
+    
+.flex{
+    display:flex;
+
+    @media screen and (max-width: 800px) {
+        
+        flex-direction: column;
+        
+    }
+}
+    .center{
+        align-items:center;
+        justify-content: center;
+
+        @media screen and (max-width: 800px) {
+            text-align:center;
+        }
+    }
+        .bottom{
+            padding-bottom:1rem;
+        }
+        .top{
+            padding-top:0.5rem;
+        }
+
+        .space_between{
+            align-items:center;
+            justify-content: space-between;
+        }
+.width_column{
+    width:33.33%;
+
+    @media screen and (max-width: 800px) {
+
+        width:100%;
+        .item:nth-child(1) {
+            order: 2;
+        }
+        
+        .item:nth-child(2) {
+            order: 1;
+        }
+
+        .item:nth-child(3) {
+            order: 3;
+        }
+
+        text-align:center;
+
+    }
+}
+.margin_bottom{
+   margin-bottom:3rem;  
+}
+
+.partner{
+    margin-left:3rem;
+    font-family:'Copperplate CC',sans-serif;
+    font-weight: bold;
+    font-size:20px;
+
+    @media screen and (max-width: 800px) {
+        
+        margin-bottom:2rem;
+        
+    }
+
+}
+
+hr {
+    border: none; /* Supprime le bord par défaut */
+    height: 0.05rem; /* Épaisseur du trait */
+    background-color: #FFFFFF; /* Couleur du trait */
+    margin-top:3rem;
+    margin-bottom:3rem;
+  } 
+
+
+.margin_side{
+    margin-left:10rem;
+    margin-right:10rem;
+
+    @media screen and (max-width: 800px) {
+        margin:0;
+    }
+}
+.text_contact{
+    font-family:'Poppins',sans-serif;
+    font-weight: 800;
+    font-size:16px;
+}
+// .width{
+//     width:180px;
+// }
+.margin_medialogo{
+    padding-left:10px;
+    padding-right:10px;
+}
+.menu{
+    a{
+        color:#FFC70A;
+    }
+
+    @media screen and (max-width: 800px) {
+        align-items:center;
+        padding-top:1rem;
+    }
+}
+.menu-item{
+    margin-bottom:0.5rem;
+}
+
+.inline{
+    display:inline;
+
+    @media screen and (max-width: 800px) {
+        flex-direction:column;
+        margin-left:1rem;
+        margin-right:1rem;
+
+    }
+
+}
+.margin_bottom{
+    margin-top:1rem;
+}
+.margin_left{
+    padding-left:4rem;
+
+    @media screen and (max-width: 800px) {
+        padding-left:0;
+    }
+}
+.margin_top{
+    padding-top:2rem;
+}
+
+a{
+    text-decoration:none;
+    color:#FFFFFF;
+}
+
+.text-underline{
+    text-decoration: underline;
+
+}
+
+.bottom_footer{
+    @media screen and (max-width: 800px) {
+        text-align:center;
+        margin-bottom:2rem;
+    }
+}
+}
