@@ -14,6 +14,10 @@
     $boolean=get_field('true_false');
     $text_informations=get_field('member_informations');
 
+    $stars=get_field('illustration_stars');
+    var_dump('$stars');
+    $glitters=get_field('illustration_glitters');
+
 ?>
 <html>
 
@@ -53,18 +57,42 @@
              
         </div>
 
-        <div class="informations">
-            <div class="flex">
-                <img class="logo"
-                    src="<?php echo ($informations['sizes']["logo_footer"]);?>" 
-                    height="<?php echo ($informations['sizes']["logo_footer-height"]);?>" 
-                    width="<?php echo ($informations['sizes']["logo_footer-width"]);?>" 
-                    alt="<?php echo ($informations['alt']);?>"
-                />
-                <p class="text_info">Informations Adhérent</p>
+        <?php 
+        if ($boolean) { ?>
+            <div class="informations">
+                <div class="flex">
+                    <img class="logoI"
+                        src="<?php echo ($informations['sizes']["logo_footer"]);?>" 
+                        height="<?php echo ($informations['sizes']["logo_footer-height"]);?>" 
+                        width="<?php echo ($informations['sizes']["logo_footer-width"]);?>" 
+                        alt="<?php echo ($informations['alt']);?>"
+                    />
+                    <p class="text_info">Informations Adhérent</p>
+                </div>
+                <div>
+                <?php if ($text_informations) {
+                            foreach ($text_informations as $text) {
+                                $infos = $text['info']; 
+                        
+                                if ($infos) {
+                                    ?>
+                                    <p class="text_info_p"><?php echo($infos) ?></p>
+                                    <?php
+                                }
+                            }
+                        }
+        }
+        ?>
             </div>
         </div>
-
+        <div>
+            <img class="img"
+                src="<?php echo ($stars['sizes']["stars1"]);?>" 
+                height="<?php echo ($stars['sizes']["stars1-height"]);?>" 
+                width="<?php echo ($stars['sizes']["stars1-width"]);?>" 
+                alt="<?php echo ($stars['alt']);?>"
+            />
+        </div>
     </body>
 
 </html>

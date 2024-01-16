@@ -6,6 +6,11 @@
     add_image_size('arrow',72,36,['center','center']);
     add_image_size('logo_socialmedia',86,86,['center','center']);
     add_image_size('logo_footer',180,180,['center','center']);
+    add_image_size('logo_i',27,27,['center','center']);
+    add_image_size('stars1',392,387,['center','center']);
+    add_image_size('stars2',157,155,['center','center']);
+    add_image_size('glitters',1232,722,['center','center']);
+  
 
     wp_enqueue_style('style',get_template_directory_uri() .'/style/style.css');
 
