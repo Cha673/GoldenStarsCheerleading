@@ -103,11 +103,57 @@ body{
 .stars-right{
     position: absolute;
     right: 0;
-    top: 750px;
+    top: 550px;
 }
 
 .stars-center{
     position: absolute;
     right: 300px;
-    top: 1200x;
+    top: 800px;
+}
+.column{
+    width:30%;
+    text-align:center;
+}
+.h2_glitters{
+    position:relative;
+}
+
+.glitters_texts{
+    position:absolute;
+    z-index: -1;
+}
+
+.bloc{
+    margin-top:20px;
+    font-family:'Poppins',sans-serif;
+    font-size:20px;
+
+}
+
+div.title {
+    position: relative;
+
+    h2 {
+        font-family:'Varsity',sans-serif;
+        font-weight: normal;
+        font-size:36px;
+    }
+
+    img {
+        position: absolute;
+        left: -77px;
+        top:-27px;
+    }
+
+}
+
+div.blocks {
+    > div.column:nth-of-type(even) {
+        margin-left:800px;
+    }
+
+    > div.column:nth-of-type(odd) {
+        margin-left:200px;
+    }
 }
