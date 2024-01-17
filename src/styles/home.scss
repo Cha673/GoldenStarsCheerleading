@@ -120,6 +120,10 @@ body{
     width:30%;
     text-align:center;
 }
+    .title{
+        position:relative;
+        overflow:hidden;
+    }
     .glitters_texts{
         position:absolute;
         z-index: -1;
@@ -135,8 +139,8 @@ body{
 
         img {
             position: absolute;
-            left: -77px;
-            top:-27px;
+            left: -19px;
+            top:-12px;
         }
 
     }
@@ -160,7 +164,7 @@ div.blocks {
     }
 }
 
-//bloc texte entrainement
+//bloc texte entrainement--------------------------------------------------------------------------------------
 .glitters{
     z-index:-1;
     position:absolute;
@@ -169,10 +173,17 @@ div.blocks {
 }
 .top90{
     margin-top:90px;
+    max-width:100%;
 }
 
     .column_50{
         width:50%;
+
+        .training{
+            width:100%;
+            height:100%;
+            object-fit: cover;
+        }
     }
 
     .white{
@@ -206,70 +217,77 @@ div.blocks {
 //----------Calendrier-----------------------
 .horizontal_bar{
     border-top: 1px solid #FFFDF4;
-    width: 100%;
-    margin-top:20px;
+    width: 80%;
+    margin-top:60px;
 }
 
 .vertical_bar{
     border-left: 1px solid #FFFDF4;
-    height: 100%;
-    margin-left:20px;
+    height: 30%;
+    margin-left:80px;
+}
+.title_event{
+
+    align-items:center;
+    justify-content: left;
+    margin-left:60px;
+    margin-top:20px;
+    margin-left:60px;
+    margin-bottom:40px;
+
+
+    p{
+        margin-top:10px;
+        margin-left:10px;
+    }
+}
+.event{
+    margin:20px;
 }
 
 //------------------------Photos noir et blanc et couleurs hover
-// .vertical{
-//     width:50%; 
-// }
-// .img1 {
-//         height:50%;
+.photosnb{
+    width:100%;
+    height:600px;
+    display:flex;
+    gap:10px;
+    margin-top:80px;
+    margin-bottom:80px;
 
-//         &:hover{
-//             .img1_hover{
-//                 display:block;
-//             }
-//         }
-//     }
-// .img1_hover{
-//     height:50%;
-//     display:none
-// }
-// .img2{
-//     height:50%;
+}
+.vertical{
+    width:50%;
+    height:100%;
+    display:flex;
+    gap:10px;
 
-//     &:hover{
-//         .img2_hover{
-//             display:flex;
-//         }
-//     }
-// }
-// .img2_hover{
-//     height:50%;
-//     display:none
-// }
-// .horizontal{
-//     height:50%;
-// }
-// .img3{
-//     width:50%;
+    .image{
+        width: 50%;
+        height: 100%;
+    }
+}
+.horizontal{
+    width:50%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
 
-//     &:hover{
-//         .img3_hover{
-//             display:block;
-//         }
-//     }
-// }
-// .img4{
-//     width:50%;
+    .image{
+        height: calc(50% - 5px);
+        width: 100%;
+    }
+}
+.image{
 
-//     &:hover{
-//         .img4_hover{
-//             display:block;
-//         }
-//     }
-// }
-// .img3_hover{
-//     display:none
-// }
-// .img4_hover{
-//     display:none
-// }
+    filter: grayscale(1);
+
+    &:hover{
+        filter: grayscale(0);
+    }    
+    img{
+        width:100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

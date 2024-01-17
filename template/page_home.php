@@ -34,13 +34,9 @@
 
 
         $img1=get_field('img_home1');
-        $img1_hover=get_field('img_home1_copy');
         $img2=get_field('img_home_2');
-        $img2_hover=get_field('img_home_2_copy');
         $img3=get_field('img_home_3');
-        $img3_hover=get_field('img_home_3_copy');
         $img4=get_field('img_home_4');
-        $img4_hover=get_field('img_home_4_copy');
 
     // id de pages 
         $id_cheerleading=16;
@@ -54,9 +50,6 @@
 
 
 ?>
-<html>
-
-    <body class="wrap">
 <!----------------image en fond avec logo par dessus --------------------------------------------------------->
         <div class="header_2">
             <div>
@@ -64,7 +57,7 @@
                     <img class="img"
                     src="<?php echo ($background['sizes']["background"]);?>" 
                     height="<?php echo ($background['sizes']["background-height"]);?>" 
-                    width="<?php echo ($background['sizes']["background-width"]);?>" 
+                    width="100%" 
                     alt="<?php echo ($background['alt']);?>"
                     />
 
@@ -221,25 +214,26 @@
         </div>
 
 <!-------------------------------------------------Calendrier---------------------------------------------------->
-        <div class="calendar horizontal_bar vertical_bar">
-            <div class="flex">
+        <div class="horizontal_bar vertical_bar">
+            <div class="flex title_event">
                 <img src="<?php echo get_template_directory_uri() . '/illustration/petite_etoile_blanche.png';?>">
-                <p>PROCHAINS ÉVÉNEMENT</p>
+                <p >PROCHAINS ÉVÉNEMENTS</p>
             </div>
             <?php if ($calendar) {
-                        foreach ($calendar as $event) {
-                            $date = $event['date']; 
-                            $title_event = $event['title_event']; 
-                            $description = $event['textarea_event']; 
-
+                foreach ($calendar as $event) {
+                    $select=$event['sportif_associatif'];
+                    $date = $event['date']; 
+                    $title_event = $event['title_event']; 
+                    $description = $event['textarea_event']; 
+                    
             ?>
-            <div class="flex">
-                <p><?php echo($date);?></p>
-                <div class="encadre_association" onclick="toggleExpansion(this)">
+            <div class=" calendar flex ">
+                <p class="event"><?php echo($date);?></p>
+                <div class="calendar_content type_<?php echo($select) ?>">
                     <div class="contenu">
                         <p><?php echo($title_event);?></p>
-                        <div class="arrow">
-                            <img src="<?php echo get_template_directory_uri() . '/illustration/calendrier/arrow.svg' ?>" width="100%">
+                        <div >
+                            <img class="arrow" src="<?php echo get_template_directory_uri() . '/illustration/calendrier/arrow.svg' ?>" width="100%">
                         </div>
                     </div>
                     <div class="expansion">
@@ -254,75 +248,41 @@
 
         </div>
 <!---------------------------------------hover photo ---------------------------------------------------------->
+    <div class="photosnb"> 
         <div class="vertical">
-            <div class="img1_size">
-                <div class="img1"> 
-                    <img 
-                    src="<?php echo ($img1['sizes']["img_vertical_hover"]);?>" 
-                    height="<?php echo ($img1['sizes']["img_vertical_hover-height"]);?>" 
-                    width="<?php echo ($img1['sizes']["img_vertical_hover-width"]);?>" 
-                    alt="<?php echo ($img1['alt']);?>"/>
-                </div>
-                <div class="img1_hover">
-                    <img 
-                    src="<?php echo ($img1_hover['sizes']["img_vertical_hover"]);?>" 
-                    height="<?php echo ($img1_hover['sizes']["img_vertical_hover-height"]);?>" 
-                    width="<?php echo ($img1_hover['sizes']["img_vertical_hover-width"]);?>" 
-                    alt="<?php echo ($img1_hover['alt']);?>"/>
-                </div>
-            <div class="img2_size">
-                <div class="img2">
-                    <img 
-                    src="<?php echo ($img2['sizes']["img_vertical_hover"]);?>" 
-                    height="<?php echo ($img2['sizes']["img_vertical_hover-height"]);?>" 
-                    width="<?php echo ($img2['sizes']["img_vertical_hover-width"]);?>" 
-                    alt="<?php echo ($img2['alt']);?>"/>
-                </div>
-                <div class="img2_hover">
+            <div class="image"> 
                 <img 
-                    src="<?php echo ($img2_hover['sizes']["img_vertical_hover"]);?>" 
-                    height="<?php echo ($img2_hover['sizes']["img_vertical_hover-height"]);?>" 
-                    width="<?php echo ($img2_hover['sizes']["img_vertical_hover-width"]);?>" 
-                    alt="<?php echo ($img2_hover['alt']);?>"/>
-                </div>
+                src="<?php echo ($img1['sizes']["img_vertical_hover"]);?>" 
+                height="<?php echo ($img1['sizes']["img_vertical_hover-height"]);?>" 
+                width="<?php echo ($img1['sizes']["img_vertical_hover-width"]);?>" 
+                alt="<?php echo ($img1['alt']);?>"/>
+            </div>
+            <div class="image">
+                <img 
+                src="<?php echo ($img2['sizes']["img_vertical_hover"]);?>" 
+                height="<?php echo ($img2['sizes']["img_vertical_hover-height"]);?>" 
+                width="<?php echo ($img2['sizes']["img_vertical_hover-width"]);?>" 
+                alt="<?php echo ($img2['alt']);?>"/>
             </div>
         </div>
         <div class="horizontal">
-            <div class="img3_size">
-                <div class="img3">
-                    <img 
-                    src="<?php echo ($img3['sizes']["img_horizontal_hover"]);?>" 
-                    height="<?php echo ($img3['sizes']["img_horizontal_hover-height"]);?>" 
-                    width="<?php echo ($img3['sizes']["img_horizontal_hover-width"]);?>" 
-                    alt="<?php echo ($img3['alt']);?>"/></div>
-                <div class="img4_hover">
+            <div class="image">
                 <img 
-                    src="<?php echo ($img3_hover['sizes']["img_horizontal_hover"]);?>" 
-                    height="<?php echo ($img3_hover['sizes']["img_horizontal_hover-height"]);?>" 
-                    width="<?php echo ($img3_hover['sizes']["img_horizontal_hover-width"]);?>" 
-                    alt="<?php echo ($img3_hover['alt']);?>"/>
-                </div>
+                src="<?php echo ($img3['sizes']["img_horizontal_hover"]);?>" 
+                height="<?php echo ($img3['sizes']["img_horizontal_hover-height"]);?>" 
+                width="<?php echo ($img3['sizes']["img_horizontal_hover-width"]);?>" 
+                alt="<?php echo ($img3['alt']);?>"/>
             </div>
-            <div class="img4_size">
-                <div class="img4">
+            <div class="image">
                 <img 
                     src="<?php echo ($img4['sizes']["img_horizontal_hover"]);?>" 
                     height="<?php echo ($img4['sizes']["img_horizontal_hover-height"]);?>" 
                     width="<?php echo ($img4['sizes']["img_horizontal_hover-width"]);?>" 
                     alt="<?php echo ($img4['alt']);?>"/>
-                </div>
-                <div class="img4_hover">
-                <img 
-                    src="<?php echo ($img4_hover['sizes']["img_horizontal_hover"]);?>" 
-                    height="<?php echo ($img4_hover['sizes']["img_horizontal_hover-height"]);?>" 
-                    width="<?php echo ($img4_hover['sizes']["img_horizontal_hover-width"]);?>" 
-                    alt="<?php echo ($img4_hover['alt']);?>"/>
-                </div>
             </div>
         </div>
-    </body>
+    </div>
 
-</html>
     
 <?php
 
