@@ -13,15 +13,15 @@ body{
     font-weight:400;
     font-size:16px;
 }
-    
+
+//CSS image en fond avec logo dessus-----
 .header2{
     position:relative;
 }
-    
-.img{
-    margin-top:0;
-    position:absolute;
-}
+    .img{
+        margin-top:0;
+        position:absolute;
+    }
     
 .gradient{
     position:relative;
@@ -41,65 +41,67 @@ body{
     margin-top:6rem;
     
 }
-    .center{
-        text-align:center;
-    }
-    .logo{
-        justify-content: center;
-        align-items: center;
-    }
     .img_center{
         display: flex;
         justify-content: center;
-    }  
-    .arrow{
-        margin-top:-4rem;
-    }
-    .arrows{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-top:0.5rem;
-    }
+    } 
+        .logo{
+            justify-content: center;
+            align-items: center;
+        }
 
+        .center{
+            text-align:center;
+        }
+    
+     
+        .arrow{
+            margin-top:-4rem;
+        }
+        .arrows{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top:0.5rem;
+        }
 
+//div infos adhérent-------------------------------------
 .informations{
     background-color:#FFC70A;
     border-radius:10px;
-    // align-items:center;
-    // justify-content: center;
-    // text-align:center;
     height:200px;
     width: 500px;
     margin-left:auto;
     margin-right:auto;
 
 }
-.text_info{
-    margin-top:20px;
-    font-family:'Copperplate CC',sans-serif;
-    font-weight: bold;
-    font-size:27px;
-    color:#0B0700;
-    margin-left:20px;
-}
+    .flex{
+        display:flex;
+    }
+        .logoI{
+            margin-top:20px;
+            margin-left:15px;
+        }
+        .text_info{
+            margin-top:20px;
+            font-family:'Copperplate CC',sans-serif;
+            font-weight: bold;
+            font-size:27px;
+            color:#0B0700;
+            margin-left:20px;
+        }
 
-.text_info_p{
-    margin-top:20px;
-    text-align:center;
-    font-size:18px;;
-    color:#0B0700;
-}
+        .text_info_p{
+            margin-top:20px;
+            text-align:center;
+            font-size:18px;;
+            color:#0B0700;
+        }
 
-.flex{
-    display:flex;
-}
-.logoI{
-    margin-top:20px;
-    margin-left:15px;
-}
 
+
+//étoiles illsutration-------------------------------
 .stars-right{
     position: absolute;
     right: 0;
@@ -111,43 +113,43 @@ body{
     right: 300px;
     top: 800px;
 }
+
+//blocs de texte - paragraphes-------------------------
+
 .column{
     width:30%;
     text-align:center;
 }
-.h2_glitters{
-    position:relative;
-}
+    .glitters_texts{
+        position:absolute;
+        z-index: -1;
+    }
+    div.title {
+        position: relative;
 
-.glitters_texts{
-    position:absolute;
-    z-index: -1;
-}
+        h2 {
+            font-family:'Varsity',sans-serif;
+            font-weight: normal;
+            font-size:36px;
+        }
+
+        img {
+            position: absolute;
+            left: -77px;
+            top:-27px;
+        }
+
+    }
+    .h2_glitters{
+        position:relative;
+    }
 
 .bloc{
     margin-top:20px;
     font-family:'Poppins',sans-serif;
     font-size:20px;
 
-}
-
-div.title {
-    position: relative;
-
-    h2 {
-        font-family:'Varsity',sans-serif;
-        font-weight: normal;
-        font-size:36px;
-    }
-
-    img {
-        position: absolute;
-        left: -77px;
-        top:-27px;
-    }
-
-}
-
+}  
 div.blocks {
     > div.column:nth-of-type(even) {
         margin-left:800px;
@@ -157,3 +159,117 @@ div.blocks {
         margin-left:200px;
     }
 }
+
+//bloc texte entrainement
+.glitters{
+    z-index:-1;
+    position:absolute;
+    top:1046px;
+
+}
+.top90{
+    margin-top:90px;
+}
+
+    .column_50{
+        width:50%;
+    }
+
+    .white{
+        background-color:#FFFDF4;
+        height:508px;
+
+        h2{
+            color:#0B0700;
+            font-family:'Varsity',sans-serif;
+            font-weight: normal;
+            font-size:36px;
+            text-align:center;
+            margin-top:40px;
+        }
+        p{
+            color:#0B0700;
+            margin-top:80px;
+            text-align:center;
+            font-family:'Poppins',sans-serif;
+            font-size:20px;
+        }
+    }
+
+
+    .button_discover{
+        text-align:center;
+        align-items:center;
+        margin-top:30px;
+    }
+
+//----------Calendrier-----------------------
+.horizontal_bar{
+    border-top: 1px solid #FFFDF4;
+    width: 100%;
+    margin-top:20px;
+}
+
+.vertical_bar{
+    border-left: 1px solid #FFFDF4;
+    height: 100%;
+    margin-left:20px;
+}
+
+//------------------------Photos noir et blanc et couleurs hover
+// .vertical{
+//     width:50%; 
+// }
+// .img1 {
+//         height:50%;
+
+//         &:hover{
+//             .img1_hover{
+//                 display:block;
+//             }
+//         }
+//     }
+// .img1_hover{
+//     height:50%;
+//     display:none
+// }
+// .img2{
+//     height:50%;
+
+//     &:hover{
+//         .img2_hover{
+//             display:flex;
+//         }
+//     }
+// }
+// .img2_hover{
+//     height:50%;
+//     display:none
+// }
+// .horizontal{
+//     height:50%;
+// }
+// .img3{
+//     width:50%;
+
+//     &:hover{
+//         .img3_hover{
+//             display:block;
+//         }
+//     }
+// }
+// .img4{
+//     width:50%;
+
+//     &:hover{
+//         .img4_hover{
+//             display:block;
+//         }
+//     }
+// }
+// .img3_hover{
+//     display:none
+// }
+// .img4_hover{
+//     display:none
+// }

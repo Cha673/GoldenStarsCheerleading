@@ -11,6 +11,9 @@
     add_image_size('stars2',157,155,['center','center']);
     add_image_size('glitters',1232,722,['center','center']);
     add_image_size('glitters_text',627,105,['center','center']);
+    add_image_size('training',720,508,['center','center']);
+    add_image_size('img_vertical_hover',380,613,['center','center']);
+    add_image_size('img_horizontal_hover',641,300,['center','center']);
   
 
     wp_enqueue_style('style',get_template_directory_uri() .'/style/style.css');

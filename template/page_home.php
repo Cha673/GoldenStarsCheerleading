@@ -1,30 +1,63 @@
 <?php
     /* Template Name: Accueil */
 
-    get_header();
-    $background=get_field('background');
-    $logo=get_field('logo');
-    $title=get_field('title');
-    $where=get_field('where');
-    //echo('<pre>');
-    //var_dump($background);
-    //echo('</pre>');
+    //récupération des variables et des contenus sur Wordpress
 
-    $informations=get_field('i_informations');
-    $boolean=get_field('true_false');
-    $text_informations=get_field('member_informations');
+        get_header();
+        $background=get_field('background');
+        $logo=get_field('logo');
+        $title=get_field('title');
+        $where=get_field('where');
+        //echo('<pre>');
+        //var_dump($background);
+        //echo('</pre>');
 
-    $stars=get_field('illustration_stars','option');
-    $stars_half=get_field('stars_half','option');
-    $glitters=get_field('illustration_glitters','option');
+        $informations=get_field('i_informations');
+        $boolean=get_field('true_false');
+        $text_informations=get_field('member_informations');
 
-    $texts_home=get_field('blocs_home');
-    $glitter_text=get_field('glitter_text','option');
+        $stars=get_field('illustration_stars','option');
+        $stars_half=get_field('stars_half','option');
+        $glitters=get_field('illustration_glitters','option');
+
+        $texts_home=get_field('blocs_home');
+        $glitter_text=get_field('glitter_text','option');
+
+        $title_training=get_field('title_training');
+        $text_training=get_field('textaerea_training');
+
+        
+
+        $illustration_training=get_field('illustration_training');
+
+        $calendar=get_field('calendar');
+
+
+        $img1=get_field('img_home1');
+        $img1_hover=get_field('img_home1_copy');
+        $img2=get_field('img_home_2');
+        $img2_hover=get_field('img_home_2_copy');
+        $img3=get_field('img_home_3');
+        $img3_hover=get_field('img_home_3_copy');
+        $img4=get_field('img_home_4');
+        $img4_hover=get_field('img_home_4_copy');
+
+    // id de pages 
+        $id_cheerleading=16;
+        $id_club=12;
+        $id_entrainement=18;
+        $id_calendrier=24;
+        $page_cheerleading = get_permalink($id_cheerleading);
+        $page_club = get_permalink($id_club);
+        $page_entrainement = get_permalink($id_entrainement);
+        $page_calendrier = get_permalink($id_calendrier);
+
 
 ?>
 <html>
 
     <body class="wrap">
+<!----------------image en fond avec logo par dessus --------------------------------------------------------->
         <div class="header_2">
             <div>
                 <div class="img-logo">
@@ -60,6 +93,7 @@
              
         </div>
 
+<!-------------------------------------div infos adhérents --------------------------------------------------->
         <?php 
         if ($boolean) { ?>
             <div class="informations">
@@ -88,7 +122,9 @@
         ?>
             </div>
         </div>
+        
         <div class="blocks">
+<!--------------------------------------- étoiles illustrations fond -------------------------------------------->
             <img class="stars-right"
                 src="<?php echo ($stars_half['sizes']["stars1"]);?>" 
                 height="<?php echo ($stars_half['sizes']["stars1-height"]);?>" 
@@ -102,6 +138,7 @@
                 width="<?php echo ($stars['sizes']["stars2-width"]);?>" 
                 alt="<?php echo ($stars['alt']);?>"
             />
+<!-----------------------------------blocs de textes----------------------------------------------------------->
             <?php
                 if ($texts_home) {
                     foreach ($texts_home as $paragraph) {
@@ -122,6 +159,17 @@
                                         alt="<?php echo ($glitter_text['alt']);?>"/>
                                 </div>
                                 <p class="bloc"><?php echo($bloc);?></p>
+                                <div class="underline_button">
+                                    <button class="underline">
+                                        <div class="double_star"> 
+                                            <img src="<?php echo get_template_directory_uri() . '/illustration/underline_button/double_star.svg';?>"> 
+                                        </div>
+                                        <div>
+                                            <a href="' . $page_club . '"><?php echo($button) ;?></a>
+                                            <div class="trait"> </div> 
+                                        </div>
+                                    </button>
+                                </div>
                                  
                             </div>
                             
@@ -132,6 +180,145 @@
                 }
             ?>
 
+        </div>
+<!----------------------------------------bloc texte entrainement---------------------------------------------->
+        <div class="training">
+            <img class="glitters"
+                src="<?php echo ($glitters['sizes']["glitters"]);?>" 
+                height="<?php echo ($glitters['sizes']["glitters-height"]);?>" 
+                width="<?php echo ($glitters['sizes']["glitters-width"]);?>" 
+                alt="<?php echo ($glitters['alt']);?>"
+            />
+            <div class="flex top90">
+                <div class="column_50 white">
+                    <h2><?php echo($title_training);?></h2>
+                    <p><?php echo($text_training);?></p>
+                    <div class="button_yellow button_discover"> 
+                    <button> 
+                        <a href="' . $page_entrainement . '"> 
+                            <div class="stars star-container">
+                                <div class="star4"> 
+                                    <img src="<?php echo get_template_directory_uri() . '/illustration/yellow_button/star_4n.svg';?>"> 
+                                </div>
+                                <div class="star3"> 
+                                    <img src="<?php echo get_template_directory_uri() . '/illustration/yellow_button/star_3n.svg';?>"> 
+                                </div>
+                            </div>
+                            Découvrir
+                        </a>
+                    </button>
+                    </div>
+                </div>
+                <div class="column_50">
+                    <img class="training"
+                        src="<?php echo ($illustration_training['sizes']["training"]);?>" 
+                        height="<?php echo ($illustration_training['sizes']["training-height"]);?>" 
+                        width="<?php echo ($illustration_training['sizes']["training-width"]);?>" 
+                        alt="<?php echo ($illustration_training['alt']);?>"
+                    />
+                </div>
+            </div>
+        </div>
+
+<!-------------------------------------------------Calendrier---------------------------------------------------->
+        <div class="calendar horizontal_bar vertical_bar">
+            <div class="flex">
+                <img src="<?php echo get_template_directory_uri() . '/illustration/petite_etoile_blanche.png';?>">
+                <p>PROCHAINS ÉVÉNEMENT</p>
+            </div>
+            <?php if ($calendar) {
+                        foreach ($calendar as $event) {
+                            $date = $event['date']; 
+                            $title_event = $event['title_event']; 
+                            $description = $event['textarea_event']; 
+
+            ?>
+            <div class="flex">
+                <p><?php echo($date);?></p>
+                <div class="encadre_association" onclick="toggleExpansion(this)">
+                    <div class="contenu">
+                        <p><?php echo($title_event);?></p>
+                        <div class="arrow">
+                            <img src="<?php echo get_template_directory_uri() . '/illustration/calendrier/arrow.svg' ?>" width="100%">
+                        </div>
+                    </div>
+                    <div class="expansion">
+                        <p><?php echo($description);?></p>
+                    </div>
+                </div>
+
+            </div>
+            <?php
+            }}
+            ?>
+
+        </div>
+<!---------------------------------------hover photo ---------------------------------------------------------->
+        <div class="vertical">
+            <div class="img1_size">
+                <div class="img1"> 
+                    <img 
+                    src="<?php echo ($img1['sizes']["img_vertical_hover"]);?>" 
+                    height="<?php echo ($img1['sizes']["img_vertical_hover-height"]);?>" 
+                    width="<?php echo ($img1['sizes']["img_vertical_hover-width"]);?>" 
+                    alt="<?php echo ($img1['alt']);?>"/>
+                </div>
+                <div class="img1_hover">
+                    <img 
+                    src="<?php echo ($img1_hover['sizes']["img_vertical_hover"]);?>" 
+                    height="<?php echo ($img1_hover['sizes']["img_vertical_hover-height"]);?>" 
+                    width="<?php echo ($img1_hover['sizes']["img_vertical_hover-width"]);?>" 
+                    alt="<?php echo ($img1_hover['alt']);?>"/>
+                </div>
+            <div class="img2_size">
+                <div class="img2">
+                    <img 
+                    src="<?php echo ($img2['sizes']["img_vertical_hover"]);?>" 
+                    height="<?php echo ($img2['sizes']["img_vertical_hover-height"]);?>" 
+                    width="<?php echo ($img2['sizes']["img_vertical_hover-width"]);?>" 
+                    alt="<?php echo ($img2['alt']);?>"/>
+                </div>
+                <div class="img2_hover">
+                <img 
+                    src="<?php echo ($img2_hover['sizes']["img_vertical_hover"]);?>" 
+                    height="<?php echo ($img2_hover['sizes']["img_vertical_hover-height"]);?>" 
+                    width="<?php echo ($img2_hover['sizes']["img_vertical_hover-width"]);?>" 
+                    alt="<?php echo ($img2_hover['alt']);?>"/>
+                </div>
+            </div>
+        </div>
+        <div class="horzontal">
+            <div class="img3_size">
+                <div class="img3">
+                    <img 
+                    src="<?php echo ($img3['sizes']["img_horizontal_hover"]);?>" 
+                    height="<?php echo ($img3['sizes']["img_horizontal_hover-height"]);?>" 
+                    width="<?php echo ($img3['sizes']["img_horizontal_hover-width"]);?>" 
+                    alt="<?php echo ($img3['alt']);?>"/></div>
+                <div class="img4_hover">
+                <img 
+                    src="<?php echo ($img3_hover['sizes']["img_horizontal_hover"]);?>" 
+                    height="<?php echo ($img3_hover['sizes']["img_horizontal_hover-height"]);?>" 
+                    width="<?php echo ($img3_hover['sizes']["img_horizontal_hover-width"]);?>" 
+                    alt="<?php echo ($img3_hover['alt']);?>"/>
+                </div>
+            </div>
+            <div class="img4_size">
+                <div class="img4">
+                <img 
+                    src="<?php echo ($img4['sizes']["img_horizontal_hover"]);?>" 
+                    height="<?php echo ($img4['sizes']["img_horizontal_hover-height"]);?>" 
+                    width="<?php echo ($img4['sizes']["img_horizontal_hover-width"]);?>" 
+                    alt="<?php echo ($img4['alt']);?>"/>
+                </div>
+                <div class="img4_hover">
+                <img 
+                    src="<?php echo ($img4_hover['sizes']["img_horizontal_hover"]);?>" 
+                    height="<?php echo ($img4_hover['sizes']["img_horizontal_hover-height"]);?>" 
+                    width="<?php echo ($img4_hover['sizes']["img_horizontal_hover-width"]);?>" 
+                    alt="<?php echo ($img4_hover['alt']);?>"/>
+                </div>
+            </div>
         </div>
     </body>
 
