@@ -287,7 +287,7 @@
                 </div>
             </div>
         </div>
-        <div class="horzontal">
+        <div class="horizontal">
             <div class="img3_size">
                 <div class="img3">
                     <img 

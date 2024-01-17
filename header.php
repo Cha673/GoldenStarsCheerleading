@@ -1,4 +1,5 @@
 <!doctype HTML>
+    <html>
     <head>
         <?php 
             wp_head() 
@@ -19,14 +20,17 @@
                 width="<?php echo ($logo_allonge['sizes']["logo_header-width"]);?>" 
                 alt="<?php echo ($logo_allonge['alt']);?>"
             />
-
-            <?php
-                wp_nav_menu(array(
-                        'menu' => 'header',
-    
-                    ));
-                
-            ?>
+            <!-- <nav id=#nav> -->
+                <?php
+                    wp_nav_menu(array(
+                            'menu' => 'header',
+        
+                        ));
+                    
+                ?>
+            <!-- <img class="burger"src="<?php echo get_template_directory_uri() . '/illustration/menu_burger.png';?>">
+            <img class="cross"src="<?php echo get_template_directory_uri() . '/illustration/petite_etoile_blanche.png';?>"> 
+            </nav> -->
         </div>
 
         </header>
