@@ -124,12 +124,17 @@
         .p{
             margin:20px;
         }
+        .event{
+            width:30%;
+            display:inline;
+        }
         .type_sportif {
             width: 862px;
             border: none;
             background-color: #FFC70A;
             border-radius: 10px;
             margin-top:2px;
+            height:100%;
         }
 
         .type_asso {
@@ -138,6 +143,7 @@
             background-color: #FFFDF4;
             border-radius: 10px;
             margin-top:2px;
+            height:100%;
         }
 
         /*titre*/
