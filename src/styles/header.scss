@@ -20,17 +20,16 @@ header{
     .logo{
         margin-right:10px;
 
-        @media screen and (max-width: 425px){
+        @media screen and (max-width: 768px){
             height:40px;
         }
     }
     .menu{
         display:flex;
         align-items: center;
-        gap:20px;
+        gap:12px;
         font-family:'Copperplate CC',sans-serif;
         font-weight: bold;
-        font-size:16px;
 
                 // position:fixed;
                 // left:-100%;
@@ -40,6 +39,8 @@ header{
 
         a {
             color:#FFC70A;
+            font-size:18px;
+
         }
 
     }
@@ -71,7 +72,7 @@ header{
         margin-left:2rem;
         margin-right:2rem;
 
-        @media screen and (max-width: 425px){
+        @media screen and (max-width: 768px){
             margin-left:1rem;
         }
     }

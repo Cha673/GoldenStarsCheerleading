@@ -1,0 +1,248 @@
+    h1{
+        font-family: 'Varsity';
+        font-weight: 800;
+        font-size: 50px;
+        color: #FFFDF4;
+        text-align: center;
+    }
+
+    
+        .text_cheerleading{
+            font-family: 'Poppins';
+            font-weight: 400;
+            font-size: 20px;
+            text-align: justify;
+            line-height: 25px;
+
+            p + ul{
+                margin-top: 2%;
+                margin-left:2%;
+            }
+
+            div + ul + div{
+                margin-top: 4%;
+            }
+            ul{
+                list-style-type: disc;
+                padding-top:4%;
+
+            }
+        }
+
+        .text_cheerleading2{
+            font-family: 'Poppins';
+            font-weight: 400;
+            font-size: 20px;
+            text-align: justify;
+            line-height: 25px;
+            color:#0B0700;
+
+
+            div + ul + div{
+                margin-bottom: 4%;
+            }
+            ul{
+                list-style-type: disc;
+                padding-top:4%;
+                
+            }
+        }
+    h2{
+        color: #FFC609;
+        font-family: "OPTICopperplate";
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        margin-bottom: 20px;
+    }
+
+    .chapo{
+        color: #FFC70A;
+        width: 100%;
+        margin-top: 85px;
+        font-weight: 600;
+    }
+    
+    
+    .fond_noir .p{
+        color:#FFFDF4; 
+    }
+    
+    .fond_noir li{
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 20px;
+        color: #FFFDF4;
+        margin-top:0%;
+        line-height: normal;
+    }
+    
+    .fond_blanc .p{
+        color:#0B0700;
+    }
+    
+    .fond_blanc li{
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 20px;
+        color: #0B0700;
+        margin-top:0px;
+        line-height: normal;
+    }
+    
+
+    .histoire{
+        margin-top: 75px;
+    }
+    
+    .text_histoire{
+        width: 55%;
+    }
+    
+    .photo_histoire{
+        width: 45%;
+    }
+    
+    .histoire_text_photo {
+        display: flex;
+        align-items: center;
+        gap: 26px;
+        position: relative;
+        z-index: 1;
+    }
+    
+    
+    #marges_text{
+        width: 100%;
+    }
+    
+    .fond_blanc{
+        background: #FFFDF4;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-left: 9%;
+        padding-right: 9%;
+        margin-top: 105px;
+        width: 82%;
+    }
+    
+    .explications{
+        margin-top:20px;
+    }
+    
+    .cheerleading1{
+        width: 100%;
+    }
+    
+    .cheerleading2{
+        width: 80%;
+    }
+    
+    .competition{
+        margin-top: 80px;
+    }
+    
+    .competition_text_photo{
+        display: flex;
+        gap:36px;
+    }
+    
+    .photo_compet{
+        width: 50%;
+    }
+    
+    .text_compet{
+        width: 50%;
+    }
+    
+    
+    .precision{
+        margin-top: 30px;
+    }
+    
+    .etoile_fond1{
+        position: absolute;
+        height: 220px;
+        top:110%;
+        right:0%;
+        opacity: 0.5;
+    }
+    
+    .etoile_fond2{
+        position: absolute;
+        height: 128px;
+        top: 130%;
+        right: 18%;
+        opacity: 0.5;
+    }
+    
+    .underline p{
+        color: #FFC70A;
+    }
+    
+    @media screen and (max-width: 758px) {
+        .histoire_text_photo {
+            flex-direction: column;
+        }
+    
+        .competition_text_photo{
+            flex-direction: column;
+        }
+    
+        .text_histoire{
+            width: 100%;
+        }
+        
+        .photo_histoire{
+            width: 100%;
+        }
+    
+        .text_compet{
+            width: 100%;
+        }
+        
+        .photo_compet{
+            width: 100%;
+        }
+    
+        p{
+            font-size: 13px;
+        }
+    
+        .chapo p{
+            margin-top: 24px;
+        }
+    
+        .fond_blanc li{
+            font-size: 13px;
+        }
+    
+        .fond_noir li{
+            font-size: 13px;
+        }
+    
+        .etoile_fond1{
+            height: 121px;
+            top:107%;
+            right:0%;
+        }
+    
+        .etoile_fond2{
+            height: 79px;
+            top: 114%;
+            right: 30%;
+        }
+    
+        h2{
+            font-size: 20px;
+        }
+    
+        h1{
+            font-size: 23px;
+        }
+    
+        .histoire{
+            margin-top: 30px;
+        }
+    }

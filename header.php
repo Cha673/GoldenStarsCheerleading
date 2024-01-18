@@ -3,23 +3,27 @@
     <head>
         <?php 
             wp_head() 
+            
         ?>
 
     </head>
 
     <?php
-
+    $accueil=10;
+    $page_accueil = get_permalink($accueil);
     $logo_allonge=get_field('logo_header','option');
     ?>
     <body>
         <header >
         <div class="display black menu margin_side">
+        <a href="<?php echo($page_accueil) ?>">
             <img class="logo"
                 src="<?php echo ($logo_allonge['sizes']["logo_header"]);?>" 
                 height="<?php echo ($logo_allonge['sizes']["logo_header-height"]);?>" 
                 width="<?php echo ($logo_allonge['sizes']["logo_header-width"]);?>" 
                 alt="<?php echo ($logo_allonge['alt']);?>"
             />
+        </a>
             <!-- <nav id=#nav> -->
                 <?php
                     wp_nav_menu(array(

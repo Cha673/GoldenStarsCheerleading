@@ -25,6 +25,11 @@
       font-family: "Poppins";
       font-style: italic;
 
+      @media screen and (max-width: 768px){
+        font-size:13px;
+        margin-bottom:2%;
+        }
+
       a {
         color:#FFC70A;
       }
@@ -34,6 +39,8 @@
     .underline>p {
       margin-left:20px;
       position: relative;
+
+
     }
     
     /*Placement et animation logo*/

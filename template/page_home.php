@@ -138,6 +138,7 @@
                         $title = $paragraph['title_bloc']; 
                         $bloc = $paragraph['bloc_textarea']; 
                         $button = $paragraph['text_button']; 
+                        $link=$paragraph['link'];
             
                         ?>
                         <div class="column">
@@ -158,7 +159,7 @@
                                             <img src="<?php echo get_template_directory_uri() . '/illustration/underline_button/double_star.svg';?>"> 
                                         </div>
                                         <div>
-                                            <a href="' . $page_club . '"><?php echo($button) ;?></a>
+                                            <a href=<?php echo $link; ?>><?php echo($button) ;?></a>
                                             <div class="trait"> </div> 
                                         </div>
                                     </button>

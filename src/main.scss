@@ -1,13 +1,14 @@
 @import "styles/reset.scss";
 
 @font-face {
-    font-family: 'Copperplate CC';
-    src: url('../fonts/CopperplateCC.woff2') format('woff2'),
-        url('../fonts/CopperplateCC.woff') format('woff');
-    font-weight: bold;
+    font-family: 'OPTICopperplate';
+    src: url('../fonts/OPTICopperplate.woff2') format('woff2'),
+        url('../fonts/OPTICopperplate.woff') format('woff');
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
+
 
 @font-face {
     font-family: 'Varsity';
@@ -25,10 +26,14 @@
 
 @import "styles/header.scss";
 @import "styles/home.scss";
+@import"styles/wrap.scss";
 @import "styles/buttons.scss";
 @import "styles/footer.scss";
 @import"styles/commun.scss";
 @import"styles/qui_sommes_nous.scss";
+@import"styles/cheerleading.scss";
+@import"styles/inscription.scss";
+
 // *{
 //     outline:1px solid red;
 // }

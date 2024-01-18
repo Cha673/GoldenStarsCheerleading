@@ -1,0 +1,182 @@
+.fond_blanc{
+    background: #FFFDF4;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 9%;
+    padding-right: 9%;
+    margin-top: 105px;
+    width: 82%;
+}
+.presentation{
+    margin-top:5%;
+    text-align:center;
+}
+
+.max_price{
+    color:#0B0700;
+    margin-top:5%;
+}
+
+.text_button{
+    color:#0B0700;
+}
+.fond_noir p{
+    text-align: center;
+}
+
+.logos_paiment{
+    display: flex;
+    align-items: flex-end;
+    gap: 70px;
+    justify-content: center;
+}
+
+.logo{
+    width: 100%;
+}
+
+.moyen{
+    width: 100%;
+}
+
+
+.sub_title{
+    color: #FFFDF4;
+    font-family: "OPTICopperplate";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+.informations_paid{
+    margin-top:5%;
+    text-align:center,
+}
+
+.fond_blanc h2{
+    color: #0B0700;
+}
+
+.documents{
+    position: relative;
+    order: 2;
+    margin-top: 70px;
+}
+
+#ligne_paillettes{
+    position: absolute;
+    width: 537px;
+    max-width: 100%;
+    left: -15%;
+    top:-7%;
+    z-index: -1;
+}
+
+.don{
+    margin-top: 45px;
+}
+
+.button_white{
+    margin-top: 60px;
+    margin-left: 15px;
+}
+
+.don .button_white{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.moyens_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.moyens_text p{
+    margin-top: 27px;
+}
+
+.moyen_paiement{
+    display: flex;
+    align-items: flex-end;
+    gap: 70px;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.etoile_fond1{
+    position: absolute;
+    height: 300px;
+    top: 6%;
+    right: -7%;
+    opacity: 0.5;
+}
+
+.etoile_fond2{
+    position: absolute;
+    height: 150px;
+    top: 65%;
+    right: 18%;
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 425px) {
+    .moyen_paiement {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .logos_paiment{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    p{
+        font-size: 13px;
+    }
+
+    .etoile_fond1{
+        height: 121px;
+        top:66%;
+        left:54%;
+    }
+
+    .etoile_fond2{
+        height: 79px;
+        top: 95%;
+        right: 22%;    
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    h1{
+        font-size: 23px;
+    }
+
+    #ligne_paillettes{
+        right: 21%;
+        bottom: 91%;      
+    }
+
+    .logo{
+        width: 50%;
+    }
+
+    .moyen{
+        width: 50%;
+    }
+
+    .moyens_text p{
+        margin-top: 5px;
+    }
+
+}
