@@ -65,7 +65,7 @@
                         $organism= $help['montant_max'];  
                     ?>
                         <div class="moyens_text">
-                            <img class="logo" 
+                            <img class="logo_organism" 
                             src="<?php echo ($img_help['sizes']["medium"]);?>" 
                             height="<?php echo ($img_help['sizes']["medium-height"]);?>" 
                             width="<?php echo ($img_help['sizes']["medium-width"]);?>" 

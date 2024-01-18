@@ -74,8 +74,8 @@
                     alt="<?php echo ($logo['alt']);?>"
                     />
                 </div> 
-                <h1 class="center"><?php echo($title) ?></h1>
-                <h2 class="center"><?php echo($where) ?></h2>
+                <h1 class=" H1 center"><?php echo($title) ?></h1>
+                <h2 class="H2 center"><?php echo($where) ?></h2>
                 <div class="arrows">
                     <img src="<?php echo get_template_directory_uri() . '/illustration/fleche_or.svg';?>" 
                     height="80px" width="80px" alt="illustration flèche or"/>
@@ -226,6 +226,7 @@
                     $date = $event['date']; 
                     $title_event = $event['title_event']; 
                     $description = $event['textarea_event']; 
+                    $link_pictures = $event['link_pictures'];
                     
             ?>
             <div class=" calendar flex ">

@@ -50,7 +50,7 @@
                 
                             ?>
                 <div class="value">
-                        <h2><?php echo($title)?></h2>
+                        <h2 class="h2_qui_sommes_nous"><?php echo($title)?></h2>
                         <div class="p"> 
                             <?php echo($bloc)?>
                         </div>

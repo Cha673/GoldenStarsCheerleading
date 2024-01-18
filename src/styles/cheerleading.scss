@@ -1,61 +1,44 @@
-    h1{
-        font-family: 'Varsity';
-        font-weight: 800;
-        font-size: 50px;
-        color: #FFFDF4;
-        text-align: center;
-    }
+.text_cheerleading{
+font-family: 'Poppins';
+font-weight: 400;
+font-size: 20px;
+text-align: justify;
+line-height: 25px;
 
+p + ul{
+    margin-top: 2%;
+    margin-left:2%;
+}
+
+div + ul + div{
+    margin-top: 4%;
+}
+ul{
+    list-style-type: disc;
+    padding-top:4%;
+
+}
+}
+
+.text_cheerleading2{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 25px;
+    color:#0B0700;
+
+
+    div + ul + div{
+        margin-bottom: 4%;
+    }
+    ul{
+        list-style-type: disc;
+        padding-top:4%;
+        
+    }
+}
     
-        .text_cheerleading{
-            font-family: 'Poppins';
-            font-weight: 400;
-            font-size: 20px;
-            text-align: justify;
-            line-height: 25px;
-
-            p + ul{
-                margin-top: 2%;
-                margin-left:2%;
-            }
-
-            div + ul + div{
-                margin-top: 4%;
-            }
-            ul{
-                list-style-type: disc;
-                padding-top:4%;
-
-            }
-        }
-
-        .text_cheerleading2{
-            font-family: 'Poppins';
-            font-weight: 400;
-            font-size: 20px;
-            text-align: justify;
-            line-height: 25px;
-            color:#0B0700;
-
-
-            div + ul + div{
-                margin-bottom: 4%;
-            }
-            ul{
-                list-style-type: disc;
-                padding-top:4%;
-                
-            }
-        }
-    h2{
-        color: #FFC609;
-        font-family: "OPTICopperplate";
-        font-size: 25px;
-        font-style: normal;
-        font-weight: 800;
-        line-height: normal;
-        margin-bottom: 20px;
-    }
 
     .chapo{
         color: #FFC70A;
@@ -206,10 +189,6 @@
             width: 100%;
         }
     
-        p{
-            font-size: 13px;
-        }
-    
         .chapo p{
             margin-top: 24px;
         }
@@ -233,15 +212,6 @@
             top: 114%;
             right: 30%;
         }
-    
-        h2{
-            font-size: 20px;
-        }
-    
-        h1{
-            font-size: 23px;
-        }
-    
         .histoire{
             margin-top: 30px;
         }

@@ -1,0 +1,166 @@
+.titre_objectifs{
+    position: relative;
+}
+
+.titre_partie_legende{
+    position: relative;
+}
+
+#ligne_paillettes1{
+    position: absolute;
+    width: 537px;
+    z-index: -1;
+    max-width: 100%;
+    top:-90%;
+    right:75%;
+}
+
+#ligne_paillettes2{
+    position: absolute;
+    width: 537px;
+    z-index: -1;
+    max-width: 100%;
+    top:-90%;
+    right:75%;
+}
+
+.p{
+    color: #FFFDF4;
+    font-family: 'Poppins';
+    font-size: 20px;
+}
+
+.objectifs{
+    display: flex;
+    margin-bottom: 80px;
+    gap:3%;
+}
+.goal{
+    margin-top:2%;
+
+    li{
+        margin-top:4%;
+        list-style-type: disc;
+    }
+}
+#etoile_fond1{
+    position: absolute;
+    height: 200px;
+    top:40%;
+    right:0%;
+    opacity:0.5;
+}
+
+#etoile_fond2{
+    position: absolute;
+    height: 100px;
+    top:60%;
+    right:15%;
+    opacity:0.5;
+}
+
+.legende{
+    display: flex;
+    align-items: center;
+    gap:30px;
+    margin-bottom: 5%;
+}
+
+.description_legende{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+#titre_legende{
+    margin-right: 90px;
+}
+
+#case_blanche{
+    background-color: #FFFDF4;
+    width: 50px;
+    height:22px;
+}
+
+#case_jaune{
+    background-color:#FFC609;
+    width: 50px;
+    height:22px;
+}
+
+#sport{
+    color: #FFC609;
+}
+
+h4{
+    color: #FFFDF4;
+    font-family: 'OPTICopperplate';
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.evenements{
+    display: flex;
+    gap: 20px;
+}
+
+
+
+@media screen and (max-width: 768px){
+
+    #ligne_paillettes1{
+        top: -60%;
+        right: 35%;
+    }
+
+    #ligne_paillettes2{
+        top: -60%;
+        right: 35%;
+    }
+
+    .p{
+        font-size: 13px;
+    }
+
+    #coupe{
+        width:20%;
+    }
+
+    #etoile_fond1{
+        height: 80px;
+        top: 12%;
+        right: 10%;
+    }
+
+    #etoile_fond2{
+        height:40px;
+        top: 24%;
+        right: 10%;
+    }
+
+    h4{
+        font-size: 13px;
+    }
+
+    .legende{
+        flex-direction: column;
+        gap: 10px;
+        align-items:normal;    
+    }
+
+    .evenements{
+        justify-content: center;
+    }
+
+    #case_blanche{
+        background-color: #FFFDF4;
+        width: 30px;
+        height:12px;
+    }
+
+    #case_jaune{
+        background-color:#FFC609;
+        width: 30px;
+        height:12px;
+    }
+}
