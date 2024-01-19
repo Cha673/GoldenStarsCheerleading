@@ -39,10 +39,6 @@
                     </div>
                 </div>
 
-                <img class="etoile_fond1" 
-                src=" <?php echo get_template_directory_uri() . '/illustration/grande_etoile_fond.svg';?>" 
-                title="etoile_fond" 
-                alt="etoile_fond">
                 <img class="etoile_fond2" 
                 src="<?php echo get_template_directory_uri() . '/illustration/grande_etoile_fond.svg';?>" 
                 title="etoile_fond" alt="etoile_fond">
@@ -50,7 +46,7 @@
             </section>
         
         
-            <div class="fond_blanc">
+            <div class="fond_blanc_2">
                 <div class="roles">
                         <h2>LES ROLES</h2>
                         <div class="explications">
@@ -81,7 +77,7 @@
                                         <img src="<?php echo get_template_directory_uri() . '/illustration/underline_button/double_star.svg';?>">
                                         </div>
                                         <div>
-                                            <div> Le lexique du cheerleading </p>
+                                            <a href=<?php echo $dictionnary['url']; ?>>Le lexique du cheerleading</a>
                                             <div class="trait"> </div> 
                                             </div>
                                         </div>

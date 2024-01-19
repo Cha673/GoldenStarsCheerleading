@@ -19,7 +19,7 @@
 ?>
 <section class="wrap qui_sommes_nous ">
     <h1>QUI-SOMMES-NOUS ?</h1>
-    <div class="chapo p"><?php echo($WH); ?></div>
+    <div class="chapo "><?php echo($WH); ?></div>
 </section>
 
 <section class="blanc qui_sommes_nous">

@@ -62,7 +62,7 @@
             <p class="center bottom top"><?php echo($adress); ?></p>
         </div>
         <div class=" center width_column">
-            <img class="logo"
+            <img class="logo align_center"
                         src="<?php echo ($logo['sizes']["logo_footer"]);?>" 
                         height="<?php echo ($logo['sizes']["logo_footer-height"]);?>" 
                         width="<?php echo ($logo['sizes']["logo_footer-width"]);?>" 

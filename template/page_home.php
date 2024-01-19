@@ -54,7 +54,7 @@
         <div class="header_2">
             <div>
                 <div class="img-logo">
-                    <img class="img"
+                    <img class="img_header"
                     src="<?php echo ($background['sizes']["background"]);?>" 
                     height="<?php echo ($background['sizes']["background-height"]);?>" 
                     width="100%" 
@@ -90,7 +90,7 @@
         <?php 
         if ($boolean) { ?>
             <div class="informations">
-                <div class="flex">
+                <div class="flex center_accueil">
                     <img class="logoI"
                         src="<?php echo ($informations['sizes']["logo_footer"]);?>" 
                         height="<?php echo ($informations['sizes']["logo_footer-height"]);?>" 
@@ -145,7 +145,7 @@
                                 
                             <div>
                                 <div class="title">
-                                    <h2><?php echo($title);?></h2>
+                                    <h2 class="title_home"><?php echo($title);?></h2>
                                     <img class="glitters_texts"
                                         src="<?php echo ($glitter_text['sizes']["glitters_text"]);?>" 
                                         height="<?php echo ($glitter_text['sizes']["glitters_text-height"]);?>" 
@@ -218,7 +218,7 @@
         <div class="horizontal_bar vertical_bar">
             <div class="flex title_event">
                 <img src="<?php echo get_template_directory_uri() . '/illustration/petite_etoile_blanche.png';?>">
-                <p >PROCHAINS ÉVÉNEMENTS</p>
+                <p class="prochains_event">PROCHAINS ÉVÉNEMENTS</p>
             </div>
             <?php if ($calendar) {
                 foreach ($calendar as $event) {

@@ -4,15 +4,15 @@ footer{
     p{
         font-size:16px;
     }
-.flex{
-    display:flex;
+    .flex{
+        display:flex;
 
-    @media screen and (max-width: 768px) {
-        
-        flex-direction: column;
-        
+        @media screen and (max-width: 768px) {
+            
+            flex-direction: column;
+            
+        }
     }
-}
     .center{
         align-items:center;
         justify-content: center;
@@ -32,6 +32,7 @@ footer{
             align-items:center;
             justify-content: space-between;
         }
+
 .width_column{
     width:33.33%;
 

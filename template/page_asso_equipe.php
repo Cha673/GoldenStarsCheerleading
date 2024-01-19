@@ -8,6 +8,7 @@
     $president=get_field('nom_president');
     $vice_president=get_field('vice-president');
     $tresorier=get_field('tresorier');
+    $vice_tresorier=get_field('vice-tresorier');
     $secretaire=get_field('secretaire');
     $vice_secretaire=get_field('vice-secretaire');
     $comm=get_field('responsable_site_communication');
@@ -17,29 +18,29 @@
 
 ?>
     <section class="wrap">
-            <h1>L'EQIUPE</h1>
+            <h1>L'EQUIPE</h1>
             <div class="paillettes_titre">
-                <h2>Qui sont les coachs ?</h2>
+                <h2 class="margins_title">Qui sont les coachs ?</h2>
                 <img id="ligne_paillettes" 
                 src="<?php echo get_template_directory_uri() . '/illustration/paillettes_ligne_titre.png' ?>" 
                 title="paillettes_ligne" >
                 </div>
             <div class="fond_noir">
-
             <?php if ($trainers) {
                 foreach ($trainers as $field) {
                     $trainer=$field['img_trainer'];
                     $name = $field['surname_first name']; 
                     $age_trainer = $field['age']; 
-                    $explication_event = $field['explication_event'];          
+                    $explication_event = $field['action'];
+                    $citation = $field['citation'];             
             ?>
                 <div class="coach">
                     <div class="photo">
                         <img id="photo_coach" 
-                        src="<?php echo ($trainer['sizes']["medium"]);?>" 
-                        height="<?php echo ($trainer['sizes']["medium-height"]);?>" 
-                        width="<?php echo ($trainer['sizes']["medium-width"]);?>" 
-                        alt="<?php echo ($trainer['alt']);?>" 
+                            src="<?php echo ($trainer['sizes']["medium"]);?>" 
+                            height="<?php echo ($trainer['sizes']["medium-height"]);?>" 
+                            width="<?php echo ($trainer['sizes']["medium-width"]);?>" 
+                            alt="<?php echo ($trainer['alt']);?>" 
                         title="photo_coach" >
                     </div>
                     <div class="explication_coach">
@@ -56,56 +57,24 @@
                             <img id="ligne_coachs" 
                             src="<?php echo get_template_directory_uri() . '/illustration/ligne_coachs.png' ?>" 
                             title="ligne_coachs">
-                            <div>
-                                    <?php foreach ($trainers as $field) {
-                                            $trainer=$field['img_trainer'];
-                                            $name = $field['surname_first name']; 
-                                            $age_trainer = $field['age']; 
-                                            $explication_event = $field['explication_event'];    
-                                    ?> 
-                                         
-                            </div>
-                        </div>
-                        <div class="citation">
-                            <div class="p"><span class="guillemet">" </span>Mon objectif, c’est de réussir à extraire le maximum de nos athlètes, de leur faire
-                                prendre conscience de leur incroyable potentiel, et pourquoi pas de décrocher un
-                                titre de Champions de France ?<span class="guillemet"> "</span></div>
-                        </div>
-                    </div>
-                </div>
-
-            <?php }}?>
-
-                <div class="coach">
-                    <div class="explication_coach_droite">
-                        <div class="nom_age_droite">
-                            <h4>MELISSA SÉGARD</h4>
-                            <div class="age">
-                                <h4>25 ans</h4>
-                            </div>
-                        </div>
-                        <div class="parcours">
                             <ul>
-                                <li>2013 - Athlète au club des AIGLES de Chambéry</li>
-                                <li>2018 - Championnat de France</li>
-                                <li>2019 - Coach au club des AIGLES de l’équipe junior de Chambéry</li>
-                                <li>2022 - Qualification de l’équipe junior des AIGLES au championnat de France et finit 5ème de France</li>
-                                <li>2023 - <span id="bold">Coach des GOLDEN STARS</span> et du Stade Clermontois Cheerleading</li>
-                            </ul>
-                            <img id="ligne_coachs" src="elements_graphiques/ligne_coachs.png" title="ligne_coachs" alt="ligne_coachs">
-                            <img id="megaphone" src="elements_graphiques/megaphone.svg" title="megaphone" alt="megaphone">
-                        </div>
+                                <?php foreach ($explication_event as $year) {
+                                        $action_year=$year['action_year'];  
+                                ?> 
+                                <div>
+                                <li><?php echo($action_year);?>
+                        
+                        <?php  }?>
+                                </div>
+                                </div>
                         <div class="citation">
-                            <div class="p"><span class="guillemet">" </span>Mon objectif, c’est de réussir à extraire le maximum de nos athlètes, de leur faire
-                                prendre conscience de leur incroyable potentiel, et pourquoi pas de décrocher un
-                                titre de Champions de France ?<span class="guillemet"> "</span></div>
+                            <div class="p"><span class="guillemet">"</span> <?php echo($citation)?> <span class="guillemet">"</span></div>
                         </div>
-                    </div>
-                    <div class="photo">
-                        <img id="photo_coach" src="equipe/coach_melissa.png" title="photo_coach" alt="photo_coach">
-                    </div>
-                </div>
 
+                    </div>
+
+                    </div>
+            <?php }}?>
             </div>
         </section>
 
@@ -116,54 +85,56 @@
                 <div class="parent">
                     <div class="div1">
                         <div class="carre_jaune">
-                            <div class="p"><span id="bold">Le Président :</span></div>
-                            <div class="p">Christophe COLAS</div>
+                            <div class="p"><span id="bold">Président.e :</span></div>
+                            <div class="p"><?php echo($president) ?></div>
                         </div>
                     </div>
                     <div class="div2">
                         <div class="carre_jaune">
-                            <div class="p"><span id="bold">La Vice-présidente :</span></div>
-                            <div class="p">Céline BERNAND</div>
+                            <div class="p"><span id="bold">Vice-président.e :</span></div>
+                            <div class="p"><?php echo($vice_president) ?></div>
                         </div>
                     </div>
                     <div class="div3">
                         <div class="carre_jaune">
-                            <div class="p"><span id="bold">La trésorière :</span></div>
-                            <div class="p">Angélique COLAS</div>
+                            <div class="p"><span id="bold">Trésorièr.e :</span></div>
+                            <div class="p"><?php echo($tresorier) ?></div>
                         </div>
                     </div>
                     <div class="div4">
                         <div class="carre_jaune">
-                            <div class="p"><span id="bold">La vice-trésorière :</span></div>
-                            <div class="p">Alice LOIGEROT</div>
+                            <div class="p"><span id="bold">Vice-trésorièr.e :</span></div>
+                            <div class="p"><?php echo($vice_tresorier) ?></div>
                         </div>
                     </div>
                     <div class="div5">
                         <div class="carre_jaune">
-                            <div class="p"><span id="bold">La secrétaire :</span></div>
-                            <div class="p">Vanessa NUNEZ</div>
+                            <div class="p"><span id="bold">Secrétaire :</span></div>
+                            <div class="p"><?php echo($secretaire) ?></div>
                         </div>
                     </div>
                     <div class="div6">
                         <div class="carre_jaune">
-                            <div class="p"><span id="bold">La vice-secrétaire :</span></div>
-                            <div class="p">Alexandra SIBERT</div>
+                            <div class="p"><span id="bold">Vice-secrétaire :</span></div>
+                            <div class="p"><?php echo($vice_secretaire) ?></div>
                         </div>
                     </div>
                     <div class="div7">
                         <div class="carre_jaune">
-                            <div class="p"><span id="bold">Responsable du site internet, communication et photos : </span><span class=text_centre>Laetitia SAINT-JUVIN</span></div>
+                            <div class="p"><span id="bold">Responsable du site internet, communication et photos : </span></div>
+                            <div class=text_centre><div class="p"><?php echo($comm) ?></div>
                         </div>
                     </div>
                     <div class="div8">
                         <div class="carre_jaune">
-                            <div class="p"><span id="bold">Responsable des réseaux sociaux, photos et vidéos : </span><span class=text_centre>Léonie LOIGEROT</span></div>
+                            <div class="p"><span id="bold">Responsable des réseaux sociaux, photos et vidéos : </div>
+                            <div class="p"><?php echo($social_media) ?></div>
                         </div>
                     </div>
                     <div class="div9">
                         <div class="carre_jaune">
                             <div class="p"><span id="bold">Recherche de sponsors : </span></div>
-                            <div class="p">Bruno CUNSOLO</div>
+                            <div class="p"><?php echo($vice_secretaire) ?></div></div>
                         </div>
                     </div>
                     <div class="div10">

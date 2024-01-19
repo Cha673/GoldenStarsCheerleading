@@ -9,6 +9,8 @@ h1{
     font-size: 50px;
     color: #FFFDF4;
     text-align: center;
+    text-transform: lowercase;
+    letter-spacing: 4px;;
 
     @media screen and (max-width: 758px) {    
             font-size: 23px;

@@ -2,12 +2,14 @@ header{
     z-index: 5;
     position:relative;
     margin-top:1rem;
-    font-family: 'Copperlate', sans-serif;
+    font-family: 'OPTICopperlate';
     font-weight: bold;
     font-size: 18px;
     color:#FFC70A;
     height: 112px;
     max-width:100%;
+    align-items:center;
+    text-align:center;
 
     .display{
         display:flex;
@@ -19,6 +21,8 @@ header{
     }
     .logo{
         margin-right:10px;
+        width:250px;
+
 
         @media screen and (max-width: 768px){
             height:40px;
@@ -40,7 +44,7 @@ header{
         a {
             color:#FFC70A;
             font-size:16px;
-
+            flex-shrink: 0;
         }
 
     }

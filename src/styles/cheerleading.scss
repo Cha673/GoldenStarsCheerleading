@@ -50,6 +50,7 @@ ul{
     
     .fond_noir .p{
         color:#FFFDF4; 
+        text-align:justify;
     }
     
     .fond_noir li{
@@ -61,11 +62,11 @@ ul{
         line-height: normal;
     }
     
-    .fond_blanc .p{
+    .fond_blanc_2 .p{
         color:#0B0700;
     }
     
-    .fond_blanc li{
+    .fond_blanc_2 li{
         font-family: Poppins;
         font-weight: 400;
         font-size: 20px;
@@ -100,7 +101,7 @@ ul{
         width: 100%;
     }
     
-    .fond_blanc{
+    .fond_blanc_2{
         background: #FFFDF4;
         padding-top: 2%;
         padding-bottom: 2%;

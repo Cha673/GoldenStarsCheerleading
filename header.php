@@ -9,14 +9,12 @@
     </head>
 
     <?php
-    $accueil=10;
-    $page_accueil = get_permalink($accueil);
     $logo_allonge=get_field('logo_header','option');
     ?>
     <body>
         <header >
         <div class="display black menu margin_side">
-        <a href="<?php echo($page_accueil) ?>">
+        <a href="<?php echo(get_home_url()) ?>">
             <img class="logo"
                 src="<?php echo ($logo_allonge['sizes']["logo_header"]);?>" 
                 height="<?php echo ($logo_allonge['sizes']["logo_header-height"]);?>" 
