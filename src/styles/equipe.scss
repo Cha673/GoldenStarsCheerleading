@@ -40,6 +40,20 @@
     display: flex;
     gap:19px;
     width: 100%;
+
+    li {
+        text-align:left;
+    }
+}
+.parcours_droite{
+    display: flex;
+    gap:19px;
+    width: 100%;
+    flex:right;
+
+    li {
+        text-align:right;
+    }
 }
 
 .coach{
@@ -47,7 +61,12 @@
     gap: 45px;
     margin-bottom: 80px;
 }
-
+.juge{
+    display: flex;
+    gap: 45px;
+    margin-bottom: 80px;
+    text-align:right;
+}
 
 .explication_coach{
     width: 70%;
@@ -62,9 +81,17 @@
 .photo{
     width: 30%;
     order:1;
+    justify-content: center;
+    display: flex;
 }
-
-
+.photo_coach{
+    width: 300px;
+    height: 100%;
+}
+.photo_juge{
+    width: 300px;
+    height: 100%;
+}
 .nom_age{
     display: flex;
     flex-direction: column;
