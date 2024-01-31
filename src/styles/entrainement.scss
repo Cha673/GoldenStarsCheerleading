@@ -6,6 +6,9 @@
     padding-bottom:80px;
     }
     
+    .center_title{
+        text-align:center;
+    }
     .niveaux>h2{ /*sous titre*/
     padding-top:60px;
     text-align: center;
@@ -36,6 +39,15 @@
     padding-bottom:27px;
     padding-left:36px;
     padding-right:36px;
+    }
+
+    .carte_n:nth-child(odd){
+        background-color: #FFC70A;
+    }
+
+    .carte_n:nth-child(even){
+        background-color: #FFFDF4;
+        color: black;
     }
     
     .carte_n>p{ /*equipe*/
@@ -143,8 +155,7 @@
     align-items: center;
     text-align: center;
     border-radius: 25px;
-    padding-top:20px;
-    padding-bottom:20px;
+    padding:20px;
     margin-top:50px;
     }
     
@@ -241,7 +252,16 @@
     opacity: 0.5;
     }
     
-    
+    .grid{
+        display:grid;
+    }
+    .clothes{
+        display:flex;
+        gap:10%;
+    }
+    .img_tenue{
+        margin-top:5%;
+    }
     /*-----------------Horaire --------------*/
     
     .horaires_lieux{
@@ -285,7 +305,7 @@
     gap:80px;
     }
     
-    .jour_heure>p:first-child{
+    .day_training{
     color:#0B0700;
     font-family: "Poppins";
     font-size: 20px;
@@ -300,7 +320,7 @@
     gap:20px;
     }
     
-    .jour_heure>p{
+    .jour_heure{
     color:#0B0700;
     font-family: "Poppins";
     font-size: 20px;
@@ -339,6 +359,8 @@
     .gymnase>h3{
     font-family: "Varsity Regular";
     font-size:20px;
+    color:#0B0700;
+
     }
     
     .gymnase>.complexe{
@@ -357,8 +379,8 @@
     
     .silhouette_horaire{
     position: absolute;
-    bottom:-50px;
-    left:50px;
+    bottom:-33px;
+    // left:50px;
     }
     
     /*fenêtre pop up*/
@@ -493,13 +515,6 @@
     
     /*-------------------------VERSION MOBILE------------------*/
     @media screen and (max-width:768px) {
-    
-    h1{
-    font-size:23px;
-    }
-    h2{
-    font-size: 20px;
-    }
     
     .mobile_only{
     display:flex;

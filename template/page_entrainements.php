@@ -21,174 +21,85 @@
 <h1> LES ENTRAINEMENTS </h1>
 <div class="niveaux"> 
     <h2> Les niveaux </h2>
-    <div class="wrap"><p> Nous accueillons les jeunes à partir de 10 ans ! </p></div>
+    <div class="wrap center_title"><?php  echo($text_age)?></div>
     <div class="wrap">
     <div class="carte_niveau">
+    <?php if ($level) {
+                foreach ($level as $team) {
+                    $name_team=$team['name_team'];
+                    $categorie = $team['categorie']; 
+                    $year_birth = $team['year_birth']; 
+                    $surclassement = $team['surclassement'];            
+            ?>
         <div class="carte_n">
             <p> ÉQUIPE </p>
-            <h3> ÉLECTRA </h3>
+            <h3> <?php  echo($name_team)?> </h3>
             <div class="categorie_niveau"> 
-                <img src="img/elements_graphiques/petite_etoile_noire.svg"> 
-                <p> Cadet </p>
-                <img src="img/elements_graphiques/petite_etoile_noire.svg"> 
+                <img src="<?php echo get_template_directory_uri() . '/illustration/petite_etoile_noir.png' ?>"> 
+                <div> <?php  echo($categorie)?>  </div>
+                <img src="<?php echo get_template_directory_uri() . '/illustration/petite_etoile_noir.png' ?>"> 
             </div>
             <div class="annee">
                 <h4> Année de naissance </h4>
-                <p> 2010 - 2011 - 2012 </p>
+                <div> <?php  echo($year_birth)?> </div>
             </div>
             <div class="annee">
                 <h4> Surclassement </h4>
-                <p> 2013 </p>
+                <div> <?php  echo($surclassement)?> </div>
             </div>
         </div>
-
-        <div class="carte_n">
-            <p> ÉQUIPE </p>
-            <h3> ÉLECTRA </h3>
-            <div class="categorie_niveau"> 
-                <img src="img/elements_graphiques/petite_etoile_noire.svg"> 
-                <p> Cadet </p>
-                <img src="img/elements_graphiques/petite_etoile_noire.svg"> 
-            </div>
-            <div class="annee">
-                <h4> Année de naissance </h4>
-                <p> 2010 - 2011 - 2012 - 2013</p>
-            </div>
-            <div class="annee">
-                <h4> Surclassement </h4>
-                <p> 2013 </p>
-            </div>
-        </div>
-
-        <div class="carte_n">
-            <p> ÉQUIPE </p>
-            <h3> ÉLECTRA </h3>
-            <div class="categorie_niveau"> 
-                <img src="img/elements_graphiques/petite_etoile_noire.svg"> 
-                <p> Cadet </p>
-                <img src="img/elements_graphiques/petite_etoile_noire.svg"> 
-            </div>
-            <div class="annee">
-                <h4> Année de naissance </h4>
-                <p> 2010 - 2011 - 2012 - 2013</p>
-            </div>
-            <div class="annee">
-                <h4> Surclassement </h4>
-                <p> 2013 </p>
-            </div>
-        </div>
+        <?php }}?>
     </div>
     </div>
-    <img class="paillettes" src="img/elements_graphiques/paillettes_fond.svg">
+    <img class="paillettes" src="<?php echo get_template_directory_uri() . '/illustration/paillettes_fond.svg' ?>">
 
     <div class="button_white"> 
         <button> 
             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> 
                 <div class="stars star-container">
-                    <div class="star4"> <img src="img/white_star_button/star_4j.svg"> </div>
-                    <div class="star3"> <img src="img/white_star_button/star_3j.svg"> </div>
+                    <div class="star4"> <img src="<?php echo get_template_directory_uri() . '/illustration/white_star_button/star_4j.svg'?>"> </div>
+                    <div class="star3"> <img src="<?php echo get_template_directory_uri() . '/illustration/white_star_button/star_3j.svg'?>"> </div>
                 </div>
                 Je m'inscris
             </a>
         </button>
     </div>
-    <div class="etoile_fond"> <img src="img/elements_graphiques/grande_etoile_fond.svg"> </div> 
+    <div class="etoile_fond"> <img src="<?php echo get_template_directory_uri() . '/illustration/grande_etoile_fond.svg' ?>"> </div> 
 </div>
 
 
 
     <div class="tarifs">
-    <div class="wrap"> <h2> Tarifs 2023-2024</h2> </div>
+    <div class="wrap"> <h2> <?php  echo($tarif)?></h2> </div>
         <div class="carte_tarif">
+            <?php if ($tab_tarif) {
+                foreach ($tab_tarif as $lign) {
+                    $l_u=$lign['licence_ou_uniforme'];
+                    $price = $lign['price'];  
+                    $link_other_page=$lign['link_other_page'];
+                    $link_page=$lign['link_page'];    
+            ?>
             <div class="licence">
                 <div class="carte_t"> 
-                    <h3> Licence + Assurance </h3>
-                    <p class="prix"> 170€</p>
+                    <h3> <?php echo($l_u)?> </h3>
+                    <p class="prix"> <?php echo($price)?></p>
                 </div>
-                <div class="underline_button">
-                    <button class="underline">
-                        <div class="double_star"> <img src="img/underline_button/double_star.svg"> </div>
-                        <div><p> Télécharger les documents </p>
-                        <div class="trait"> </div> </div>
-                    </button>
-                </div>
-            </div>
-
-            <div class="uniforme">
-                <div class="carte_t"> 
-                    <h3> Uniforme </h3>
-                    <p class="prix"> 180€</p>
-                </div>
-                <div class="underline_button desktop_only" id="openPopup">
-                    <button class="underline">
-                        <div class="double_star"> <img src="img/underline_button/double_star.svg"> </div>
-                        <div><p> Voir les uniformes </p>
-                        <div class="trait"> </div> </div>
-                    </button>
-                </div>
-                <div class="underline_button mobile_only" >
-                    <button class="underline">
-                        <a href="https://photos.app.goo.gl/NsMSVdZEnfinYaFA8" target="_blank">
-                            <div class="double_star"> <img src="img/underline_button/double_star.svg"> </div>
-                            <div><p> Découvrir les uniformes </p>
+                    <div class="underline_button">
+                        <?php if($link_other_page) { ?>
+                        <button class="underline">
+                            <div class="double_star"> 
+                                <img src="<?php echo get_template_directory_uri() . '/illustration/underline_button/double_star.svg' ?>"> 
+                            </div>
+                            <div><a href="<?php  echo($link_page)?>"><?php echo($link_other_page)?></a>
                             <div class="trait"> </div> </div>
-                        </a>
-                    </button>
-                </div>
-
-            <div id="popupContainer" class="popup">
-                <div class="popupContent">
-                    <span class="closeButton" onclick="closePopup()">&#10006;</span>
-                    <h3 class="titre_popup">La tenue de démonstration</h3>
-                    <div class="categories_popup">
-                        <div> 
-                            <h4 class="categorie"> Fille </h4>
-                            <div class="img_uniforme_femme"> 
-                                <img src="img/popup_entrainement/fille_face.png" width="100%">
-                                <img src="img/popup_entrainement/fille_dos.png" width="100%">
-                            </div>
-                        </div>
-                        <div class="other"> 
-                            <h4 class="categorie"> Garçon </h4> 
-                            <div class="img_uniforme">
-                                    <img src="img/popup_entrainement/garçon_face.png" width="60%">
-                                    <img src="img/popup_entrainement/garçon_bas.png" width="30%">
-                            </div>
-                        </div>
-                        <div class="other"> 
-                            <h4 class="categorie"> Jersey </h4> 
-                            <div class="img_uniforme">
-                                <a href="https://www.instagram.com/dazzle_athletics/" target="_blank"> <img src="img/popup_entrainement/jersey.png" width="98%"></a>
-                            </div>
-                        </div>
-                        <div class="other"> 
-                            <h4 class="categorie"> Ruban </h4> 
-                            <div class="img_uniforme">
-                                <img src="img/popup_entrainement/bow.png" width="80%">
-                            </div>
-                            <p> Ruban non compris dans les 180€</p>
-                        </div> <!-- fin other-->
-                    </div> <!-- fin categories_popup-->
-                    <div class="button_white"> 
-                        <button> 
-                            <a href="https://photos.app.goo.gl/NsMSVdZEnfinYaFA8" target="_blank"> 
-                                <div class="stars star-container">
-                                    <div class="star4"> <img src="img/yellow_button/star_4n.svg"> </div>
-                                    <div class="star3"> <img src="img/yellow_button/star_3n.svg"> </div>
-                                </div>
-                                Découvrir toutes les photos
-                            </a>
                         </button>
+                        <?php } ?>
                     </div>
-                    <img class="etoile_popupg" src="img/elements_graphiques/grande_etoile_fond.svg" width="10%">
-                    <img class="etoile_popupp" src="img/elements_graphiques/grande_etoile_fond.svg" width="5%">
-                    <img class="etoile_popuph" src="img/elements_graphiques/grande_etoile_fond.svg" width="7%">
+            </div>
+            <?php }}?>
 
-                </div> <!-- fin popupContent-->
-            </div> <!-- fin popupContainer-->
-        </div> <!-- fin uniforme-->
         <div class="silhouette">
-            <img src="img/elements_graphiques/silhouette_noire.png" width="90%";>
+            <img src="<?php echo get_template_directory_uri() . '/illustration/underline_button/silhouette_noire.png '?>" width="90%";>
         </div>
         </div> <!-- fin carte tarif-->
     </div> <!-- fin tarif-->
@@ -197,71 +108,123 @@
         <div class="wrap">
             <div class="partie_droite">
                 <h2> Les tenues d'entrainement </h2>
+                <?php if ($training_clothes) {
+                foreach ($training_clothes as $clothes) {
+                    $preconisation=$clothes['preconisation'];      
+                ?>
                 <div class="demande">
-                    <img src="img/elements_graphiques/main.png"> 
-                    <p> tenueeeeeeeeeeeeeee123456789123456789 </p> 
+                    <img src="<?php echo get_template_directory_uri() . '/illustration/main.png '?>"> 
+                    <?php echo($preconisation)?>
                 </div>
-                <div class="demande">
-                    <img src="img/elements_graphiques/main.png"> 
-                    <p> tenue </p> 
-                </div>
-                <div class="demande">
-                    <img src="img/elements_graphiques/main.png"> 
-                    <p> tenue </p> 
-                </div>
-                <div class="demande">
-                    <img src="img/elements_graphiques/main.png"> 
-                    <p> tenue </p> 
-                </div>
-                <div class="demande">
-                    <img src="img/elements_graphiques/main.png"> 
-                    <p> tenue </p> 
-                </div>
-                <div class="demande">
-                    <img src="img/elements_graphiques/main.png"> 
-                    <p> tenue </p> 
-                </div>
-                <p> À acheter : Baskets blanches d’intérieur à lacets et semelle fine </p>
+                <?php }}?>
+
+                <div><?php  echo($baskets)?> </div>
             </div>
             <div class="partie_gauche">
                 <div class="image_pgauche">
-                    <img class="figure" src="img/entrainement/photo_entrainement.png" width="100%">
-                    <img class="chaussures" src="img/entrainement/photo_basket.png" width="50%">
+                    <img class="figure" src="<?php echo get_template_directory_uri() . '/illustration/entrainement/photo_entrainement.png'?> " width="100%">
+                    <img class="chaussures" src="<?php echo get_template_directory_uri() . '/illustration/entrainement/photo_basket.png'?>" width="50%">
                 </div>
-                <img class="etoile_tenuep" src="img/elements_graphiques/grande_etoile_fond.svg" width="10%">
-                <img class="etoile_tenueg" src="img/elements_graphiques/grande_etoile_fond.svg" width="25%">
+                <img class="etoile_tenuep" src="<?php echo get_template_directory_uri() . '/illustration/grande_etoile_fond.svg' ?>" width="10%">
+                <img class="etoile_tenueg" src="<?php echo get_template_directory_uri() . '/illustration/grande_etoile_fond.svg' ?>" width="25%">
             </div>
-            <img class="etoile_tenueh" src="img/elements_graphiques/grande_etoile_fond.svg" width="12%">
+            <img class="etoile_tenueh" src="<?php echo get_template_directory_uri() . '/illustration/grande_etoile_fond.svg' ?>" width="12%">
+        </div>
+    </div>
+
+    <div class="tenue_entrainement">
+        <div class="wrap">
+            <div>
+                <h2> L'uniforme </h2>
+            <div class="clothes">
+            <!-- $clothes_boys=get_field('clothes_boys');
+    $other_clothes=get_field('other_clothes');
+    $accessory=get_field('accessory');
+    $clothes_girls -->
+                    <div class="column">
+                        <p>Filles</p>
+                        <?php if($clothes_girls){
+                            foreach($clothes_girls as $img_cloths_girl){
+                                $tenues_filles=$img_cloths_girl['img_clothes_girl'];
+                                ?>
+                                <img  class="img_tenue" 
+                                    src="<?php echo ($tenues_filles['sizes']["medium"]);?>" 
+                                    height="<?php echo ($tenues_filles['sizes']["medium-height"]);?>" 
+                                    width="<?php echo ($tenues_filles['sizes']["medium-width"]);?>" 
+                                    alt="<?php echo ($tenues_filles['alt']);?>" 
+                                title="image tenue filles" >
+                        <?php }}?>
+                    </div>
+                    <div class="column">
+                        <p>Garçons</p>
+                        <?php if($clothes_boys){
+                            foreach($clothes_boys as $img_cloths_boys){
+                                $tenues_garcons=$img_cloths_boys['img_clothes_boys'];
+                                ?>
+                                <img  class="img_tenue" 
+                                    src="<?php echo ($tenues_garcons['sizes']["medium"]);?>" 
+                                    height="<?php echo ($tenues_garcons['sizes']["medium-height"]);?>" 
+                                    width="<?php echo ($tenues_garcons['sizes']["medium-width"]);?>" 
+                                    alt="<?php echo ($tenues_garcons['alt']);?>" 
+                                title="image tenue garçons" >
+                        <?php }}?>
+                    </div>
+                    <div class="column">
+                    <?php if($accessory){
+                            foreach($accessory as $img_other){
+                                $text_img=$img_other['name_accessory'];
+                                $img_accesory=$img_other['img_acessory'];
+                                ?>
+                        <div><?php echo($text_img) ?></div>
+                        <img  class="img_tenue" 
+                            src="<?php echo ($img_accesory['sizes']["medium"]);?>" 
+                            height="<?php echo ($img_accesory['sizes']["medium-height"]);?>" 
+                            width="<?php echo ($img_accesory['sizes']["medium-width"]);?>" 
+                            alt="<?php echo ($img_accesory['alt']);?>" 
+                        title="image tenue autres" >
+                        <?php }}?>
+                    </div>
+            </div>
+            </div>
         </div>
     </div>
 
     <div class="horaires_lieux">
         <h2> Horaires & lieux </h2>
-        
         <div class="horaire">
+            <?php if ($gymnase) {
+                foreach ($gymnase as $where) {
+                    $days=$where['days'];
+                    $infos_gymnase=$where['infos_gymnase'];
+                    $name_gymnase=$where['name_gymnase'];
+                    $adress=$where['adress_gymnase'];
+                    $ville_gymnase=$where['ville_gymnase'];
+                    $link_maps=$where['link_maps'];      
+            ?>
             <div class="encadre">
                 <div class="date">
+                <?php if ($days) {
+                    foreach ($days as $day) {
+                        $jour=$day['day'];
+                        $hours=$day['hours'];    
+                ?>
                     <div class="jour_heure"> 
-                        <p> Jeudi</p>
-                        <p> De 18 h 30 à 20 h 30</p> 
+                        <div class="day_training"> <?php  echo($jour)?></div>
+                        <div> <?php  echo($hours)?></div>
                     </div>
-                    <div class="jour_heure"> 
-                        <p> Vendredi</p>
-                        <p> De 18 h à 20 h </p> 
-                    </div>
+                <?php }}?>
                 </div>
                 <div class="lieu">
                     <div class="gymnase">
-                        <p class="complexe"> COMPLEXE BOUTRON </p>
-                        <h3> GYMNASE BENOIT CHAMOUX </h3>
-                        <p> 31 rue du Grand Champs </p>
-                        <p> 73000 Chambéry </p>
+                        <div class="complexe"><?php echo($infos_gymnase)?></div>
+                        <h3> <?php echo($name_gymnase)?></h3>
+                        <div> <?php echo($adress)?> </div>
                         <div class="button_white"> 
                             <button> 
-                                <a href="https://maps.app.goo.gl/ctfGuVZ5NKZCqn9r6" target="_blank"> 
+                                <a href="<?php  echo($link_maps)?>" target="_blank"> 
                                     <div class="stars star-container">
-                                        <div class="star4"> <img src="img/white_star_button/star_4j.svg"> </div>
-                                        <div class="star3"> <img src="img/white_star_button/star_3j.svg"> </div>
+                                        <div class="star4"> <img src="<?php echo get_template_directory_uri() . '/illustration/petite_etoile_noir.png'?>"> </div>
+                                        <div class="star3"> <img src="<?php echo get_template_directory_uri() . '/illustration/petite_etoile_noir.png'?>"> </div>
                                     </div>
                                     S'y rendre
                                 </a>
@@ -270,36 +233,10 @@
                     </div>
                 </div>
             </div>
-
-            <div class="encadre">
-                <div class="date">
-                    <div class="jour_heure"> 
-                        <p> Certains dimanches de l'année</p>
-                        <p> Horaires variables </p> 
-                    </div>
-                </div>
-                <div class="lieu">
-                    <div class="gymnase">
-                        <h3> GYMNASE LA PALESTRE </h3>
-                        <p> 2 square Jacques Lapeyre </p>
-                        <p> 73000 Chambéry </p>
-                        <div class="button_white"> 
-                            <button> 
-                                <a href="https://maps.app.goo.gl/FayMMm2zcuVeTn3V7" target="_blank"> 
-                                    <div class="stars star-container">
-                                        <div class="star4"> <img src="img/white_star_button/star_4j.svg"> </div>
-                                        <div class="star3"> <img src="img/white_star_button/star_3j.svg"> </div>
-                                    </div>
-                                    S'y rendre
-                                </a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?php }}?>
         </div>
         <p> <a href=""> Regardez les "informations adhérents" pour des informations sur les entrainements au fil de la saison </a></p>
-        <img class="silhouette_horaire" src="img/elements_graphiques/silhouette_jaune.png">
+        <img class="silhouette_horaire" src="<?php echo get_template_directory_uri() . '/illustration/silhouette_jaune.png'?>">
     </div>
 </div>
 
