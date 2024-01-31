@@ -1,0 +1,808 @@
+    /*---------------------------Niveaux---------------------*/
+    
+    .niveaux{
+    position:relative;
+    overflow: hidden;
+    padding-bottom:80px;
+    }
+    
+    .niveaux>h2{ /*sous titre*/
+    padding-top:60px;
+    text-align: center;
+    }
+    
+    .niveaux>.wrap>p{ /*phrase 10 ans*/
+    text-align: center;
+    margin-top:20px;
+    }
+    
+    .carte_niveau{ /* div des 3 cartes*/
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:60px;
+    margin-top:45px;
+    }
+    
+    .carte_n{ /*contour et interieur*/
+    display: flex;
+    flex-direction: column;
+    background-color: #FFC70A;
+    opacity: 0.85;
+    align-items: center;
+    text-align: center;
+    border-radius: 25px;
+    padding-top:27px;
+    padding-bottom:27px;
+    padding-left:36px;
+    padding-right:36px;
+    }
+    
+    .carte_n>p{ /*equipe*/
+    font-size: 25px;
+    color:#0B0700;
+    }
+    
+    .carte_n>h3{ /*nom équipe*/
+    font-family:"Varcity Regular";
+    font-size: 30px;
+    color:#0B0700;
+    }
+    
+    .categorie_niveau{ /*catégorie*/
+    display:flex;
+    gap:10px;
+    margin-top:21px;
+    align-items: center;
+    }
+    
+    .categorie_niveau>img{ /*étoiles noires*/
+    width:15px;
+    margin-top:-4px;
+    }
+    
+    .categorie_niveau>p{ /*texte*/
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    color:#0B0700;
+    }
+    
+    .annee{
+    margin-top: 20px;
+    }
+    
+    .annee>h4{
+    font-size:20px;
+    font-weight: 600;
+    font-family: "Poppins";
+    color:#0B0700;
+    }
+    
+    .annee>p{
+    font-family:"Poppins";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color:#0B0700;
+    }
+    
+    .paillettes{ /*paillettes*/
+    position:absolute;
+    z-index: -1;
+    bottom:-60px;
+    left:-190px;
+    transform: rotate(180deg);
+    width:1000px;
+    }
+    
+    .niveaux>.button_white{ /*bouton s'inscrire*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:50px;
+    }
+    
+    .etoile_fond{
+    width:25%;
+    position:absolute;
+    right:-80px;
+    bottom:-140px;
+    z-index: -1;
+    opacity: 0.5;
+    }
+    
+    /*-------------------------------tarifs----------------------------*/ 
+    
+    .tarifs{ /*rectangle blanc*/
+    background-color:#FFFDF4;
+    width:100%;
+    color:#0B0700;
+    position: relative;
+    padding-bottom:45px;
+    overflow: hidden;
+    }
+    
+    .wrap>h2{
+    color:#0B0700;
+    }
+    
+    .carte_tarif{
+    display:flex;
+    flex-wrap: wrap;
+    gap:124px;
+    justify-content: center;
+    margin-left:-100px;
+    }
+    
+    .carte_t{
+    border-style:solid;
+    border-color: #FFC70A;
+    border-width: 3px;
+    align-items: center;
+    text-align: center;
+    border-radius: 25px;
+    padding-top:20px;
+    padding-bottom:20px;
+    margin-top:50px;
+    }
+    
+    .carte_t>h3{
+    color:#0B0700;
+    font-family: "Poppins";
+    font-size:20px;
+    font-weight:600;
+    margin-bottom:15px;
+    }
+    
+    .carte_t>p{
+    color: #0B0700;
+    font-family: "Varsity Regular";
+    font-size:20px;
+    }
+    
+    
+    .silhouette{
+    position:absolute;
+    bottom:-40px;
+    right:180px;
+    }
+    
+    /*------------------------tenue------------------------*/
+    .tenue_entrainement{
+    position:relative;
+    overflow: hidden;
+    }
+    
+    .tenue_entrainement>.wrap{
+    display:flex;
+    justify-content: space-between;
+    padding-bottom:45px;
+    }
+    
+    .demande{
+    display: flex;
+    gap:20px;
+    margin-top:30px;
+    }
+    
+    .partie_droite>p{
+    margin-top:15px;
+    padding-left:20px;
+    font-family: "Poppins";
+    font-weight: 600;
+    }
+    
+    .partie_droite>h2{
+    padding-top:36px;
+    }
+    
+    .partie_gauche{
+    position:relative;
+    }
+    
+    .image_pgauche{
+    display: flex;
+    flex-direction: column;
+    padding-right:145px;
+    padding-top:75px;
+    }
+    
+    .chaussures{
+    margin-top:10px;
+    }
+    
+    
+    .etoile_tenuep{
+    position: absolute;
+    top:200px;
+    right:463px;
+    z-index: -1;
+    transform: rotate(15deg);
+    opacity: 0.5;
+    }
+    
+    .etoile_tenueg{
+    position: absolute;
+    top:260px;
+    right:200px;
+    z-index: -1;
+    transform: rotate(-20deg);
+    opacity: 0.5;
+    }
+    
+    .etoile_tenueh{
+    position: absolute;
+    top:-90px;
+    left:-70px;
+    z-index: -1;
+    transform: rotate(20deg);
+    opacity: 0.5;
+    }
+    
+    
+    /*-----------------Horaire --------------*/
+    
+    .horaires_lieux{
+    background-color:#FFFDF4;
+    position: relative;
+    padding-bottom:45px;
+    }
+    
+    .horaires_lieux>p{
+    color:#0B0700;
+    text-align: center;
+    margin-top:40px;
+    }
+    .horaires_lieux>p>a{
+    color:#0B0700;
+    }
+    
+    .horaires_lieux>h2{ /*titre h2*/
+    text-align: center;
+    padding-top:30px;
+    color: #0B0700;
+    }
+    
+    .horaire{ /* encadrés*/
+    display: flex;
+    flex-wrap: wrap;
+    gap:60px;
+    justify-content: center;
+    margin-top:40px;
+    z-index:1;
+    }
+    
+    .date{ /*encadrés individuels*/
+    display: flex;
+    border-style: solid;
+    border-color: #0B0700;
+    border-width: 3px;
+    border-radius: 25px;
+    padding:26px;
+    padding-bottom:115px;
+    gap:80px;
+    }
+    
+    .jour_heure>p:first-child{
+    color:#0B0700;
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight:600;
+    font-style:normal;
+    text-align: center;
+    }
+    
+    .jour_heure{ /* jour + horaire individuels */
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    }
+    
+    .jour_heure>p{
+    color:#0B0700;
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight:400;
+    font-style:normal;
+    text-align: center;
+    }
+    
+    .lieu{
+    display: flex;
+    flex-wrap: wrap;
+    gap:60px;
+    justify-content: center;
+    z-index:2;
+    }
+    
+    .gymnase{
+    background-color: #FFC70A;
+    border-radius: 25px;
+    padding:15px;
+    gap:80px;
+    text-align: center;
+    margin-top:-90px;
+    }
+    
+    .gymnase>p{
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight:300;
+    font-style:normal;
+    color:#0B0700;
+    margin-top:20px;
+    margin-bottom:-10px;
+    }
+    
+    .gymnase>h3{
+    font-family: "Varsity Regular";
+    font-size:20px;
+    }
+    
+    .gymnase>.complexe{
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight:400;
+    font-style:normal;
+    color:#0B0700;
+    margin-top:-5px;
+    margin-bottom:10px;
+    }
+    
+    .gymnase>.button_white{
+    margin-top:20px;
+    }
+    
+    .silhouette_horaire{
+    position: absolute;
+    bottom:-50px;
+    left:50px;
+    }
+    
+    /*fenêtre pop up*/
+    .popup {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(3px); /* Effet de flou sur le fond */
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+    .popupContent { /*TOUT*/
+        background-color: #FFC70A;
+        padding-left: 20px;
+        padding-right:20px;
+        padding-top:35px;
+        padding-bottom:35px;
+        width: 80%;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        position: relative;
+        overflow: hidden;
+    }
+    .closeButton {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+    }
+    .titre_popup {
+        color:#0B0700;
+        font-family: "Varsity Regular";
+        font-size: 25px;
+    }
+    .categories_popup{ /* le contenu sauf titre pop up*/
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-top:30px; 
+    margin-right:20px;
+    margin-left:20px;
+    }
+    .categorie{ /*nom catégorie*/
+    font-family: "Poppins";
+    font-weight:700;
+    font-style: normal;
+    color:#0B0700;
+    margin-top:20px;
+    margin-bottom:20px;
+    }
+    /*femme*/
+    .categories_popup:first-child>div{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        
+    }
+    .categories_popup>div {
+    width:25%;
+    border-color: #0B0700;
+    border-radius: 10px;
+    border-width: 3px;
+    border-style: solid;
+    margin-left:10px;
+    margin-right:10px;
+    padding-right:10px;
+    padding-left:10px;
+    }
+    
+    .img_uniforme_femme>img {
+        max-height: 100%;
+        margin-bottom: 10px; 
+    }
+    /*autre*/
+    .other{ /* 3 autres div*/
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .other>p{
+    font-family: "Poppins";
+    font-weight:400;
+    font-style: normal;
+    color:#0B0700;
+    font-size: 1vw;
+    }
+    .img_uniforme{ 
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
+    margin-top:40px;
+    }
+    .img_uniforme>img {
+    max-height: 100%;
+    }
+    
+    .etoile_popupg{
+    position :absolute;
+    bottom:-40px;
+    left:-20px;
+    opacity: 0.8;
+    transform: rotate(25deg);
+    }
+    
+    .etoile_popupp{
+    position :absolute;
+    bottom:-10px;
+    left:110px;
+    opacity: 0.8;
+    transform: rotate(-10deg);
+    }
+    
+    .etoile_popuph{
+    position :absolute;
+    top:-45px;
+    right:300px;
+    opacity: 0.8;
+    transform: rotate(-20deg);
+    }
+    
+    .mobile_only{
+    display:none;
+    }
+    
+    /*-------------------------VERSION MOBILE------------------*/
+    @media screen and (max-width:768px) {
+    
+    h1{
+    font-size:23px;
+    }
+    h2{
+    font-size: 20px;
+    }
+    
+    .mobile_only{
+    display:flex;
+    }
+    
+    .desktop_only{
+    display:none;
+    }
+    
+    /*---------------------------Niveaux---------------------*/
+    .niveaux{
+    padding-bottom:50px;
+    }
+    .niveaux>h2{ /*sous titre*/
+    padding-top:23px;
+    }
+    .niveaux>.wrap>p{ /*phrase 10 ans*/
+    margin-top:12px;
+    font-size: 13px;
+    }
+    .carte_niveau{ /* div des 3 cartes*/
+    gap:30px;
+    margin-top:25px;
+    }
+    .carte_n{ /*contour et interieur*/
+    padding:11px;
+    }
+    .carte_n>p{ /*equipe*/
+    font-size: 17px;
+    }
+    .carte_n>h3{ /*nom équipe*/
+    font-size: 23px;
+    }
+    .categorie_niveau{ /*catégorie*/
+    display:flex;
+    gap:7px;
+    margin-top:10px;
+    }
+    .categorie_niveau>p{ /*texte*/
+    font-size: 13px;
+    }
+    .annee{
+    margin-top: 15px;
+    }
+    .annee>h4{
+    font-size:15px;
+    }
+    .annee>p{
+    font-size: 14px;
+    margin-top:5px;
+    }
+    .paillettes{ /*paillettes*/
+    bottom:70px;
+    left:-250px;
+    width: 1200px;
+    }
+    .niveaux>.button_white{ /*bouton s'inscrire*/
+    margin-top:20px;
+    }
+    .etoile_fond{
+    width:25%;
+    right:-30px;
+    bottom:-40px;
+    }
+    
+    /*-------------------------------tarifs----------------------------*/ 
+    
+    .tarifs{ /*rectangle blanc*/
+    padding-bottom:45px;
+    padding-top:20px;
+    }
+    
+    .wrap>h2{
+    color:#0B0700;
+    text-align: center;
+    }
+    
+    .carte_tarif{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left:0px;
+    margin-top:-20px;
+    gap:0px;
+    }
+    
+    .carte_t{
+    border-style:solid;
+    border-color: #FFC70A;
+    border-width: 3px;
+    align-items: center;
+    text-align: center;
+    border-radius: 25px;
+    padding-top:20px;
+    padding-bottom:20px;
+    }
+    
+    .carte_t>h3{
+    color:#0B0700;
+    font-family: "Poppins";
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:15px;
+    }
+    
+    .carte_t>p{
+    color: #0B0700;
+    font-family: "Varsity Regular";
+    font-size:13px;
+    }
+    
+    .silhouette{
+    opacity:0;
+    }
+    
+    /*------------------------tenue------------------------*/
+    .tenue_entrainement>.wrap{
+    padding-bottom:0px;
+    flex-direction: column;
+    justify-content: center;
+    gap:0px;
+    }
+    
+    .demande{
+    width:100%;
+    display: flex;
+    gap:10px;
+    margin-top:20px;
+    }
+    
+    .demande>p{
+    width:75%;
+    overflow-wrap: break-word;
+    font-size:13px;
+    }
+    
+    .demande>img{
+    width:20%;
+    }
+    
+    .partie_droite>p{
+    font-size:13px;
+    padding-left:0px;
+    }
+    
+    .partie_droite>h2{
+    padding-top:36px;
+    }
+    
+    .image_pgauche{
+    display: flex;
+    position: relative;
+    flex-direction:column-reverse;
+    padding-right:0px;
+    padding-top:0px;
+    margin-left:-40px;
+    }
+    
+    .chaussures{
+    margin-top:0px;
+    margin:0 auto;
+    }
+    
+    .figure{
+    width:150%;
+    margin-left:-55x;
+    }
+    
+    .etoile_tenuep{
+    position: absolute;
+    top:200px;
+    right:463px;
+    z-index: -1;
+    transform: rotate(15deg);
+    opacity: 0.5;
+    }
+    
+    .etoile_tenueg{
+    position: absolute;
+    top:260px;
+    right:200px;
+    z-index: -1;
+    transform: rotate(-20deg);
+    opacity: 0.5;
+    }
+    
+    .etoile_tenueh{
+    position: absolute;
+    top:-90px;
+    left:-70px;
+    z-index: -1;
+    transform: rotate(20deg);
+    opacity: 0.5;
+    }
+    
+    /*-----------------Horaire --------------*/
+    .horaire{ /* encadrés*/
+    gap:30px;
+    margin-top:30px;
+    }
+    
+    .date{ /*encadrés individuels*/
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: #0B0700;
+    border-width: 3px;
+    border-radius: 25px;
+    padding:0px;
+    padding-top:10px;
+    padding-bottom:100px;
+    gap:20px;
+    align-items: center;
+    width:230px;
+    }
+    
+    .date:first-child>.jour_heure.jour{
+    margin-left:-5px;
+    }
+    
+    .jour_heure>p:first-child{
+    color:#0B0700;
+    font-family: "Poppins";
+    font-size: 15px;
+    font-weight:600;
+    font-style:normal;
+    overflow-wrap: break-word;
+    max-width:80%;
+    text-align: center;
+    }
+    
+    .jour_heure{ /* jour + horaire individuels */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+    }
+    
+    .jour_heure>p{
+    color:#0B0700;
+    font-family: "Poppins";
+    font-size: 13px;
+    font-weight:400;
+    font-style:normal;
+    }
+    
+    .lieu{
+    display: flex;
+    flex-wrap: wrap;
+    gap:60px;
+    justify-content: center;
+    z-index:2;
+    width:200px;
+    margin:auto;
+    }
+    
+    .gymnase{
+    background-color: #FFC70A;
+    border-radius: 25px;
+    gap:0px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top:-90px;
+    padding:0px;
+    padding-top:15px;
+    padding-bottom:15px;
+    }
+    
+    .gymnase>p{
+    font-family: "Poppins";
+    font-size: 13px;
+    font-weight:300;
+    font-style:normal;
+    color:#0B0700;
+    margin-top:20px;
+    margin-bottom:-10px;
+    }
+    
+    .gymnase>h3{
+    font-family: "Varsity Regular";
+    font-size:16px;
+    overflow-wrap: break-word;
+    width:75%;
+    margin:0 auto;
+    }
+    
+    .gymnase>.complexe{
+    font-family: "Poppins";
+    font-size: 15px;
+    font-weight:400;
+    font-style:normal;
+    color:#0B0700;
+    margin-top:-5px;
+    margin-bottom:10px;
+    }
+    
+    .gymnase>.button_white{
+    margin-top:20px;
+    }
+    
+    .silhouette_horaire{
+    display:none;
+    }
+    
+    }
