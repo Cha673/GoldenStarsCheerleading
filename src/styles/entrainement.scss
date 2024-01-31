@@ -252,15 +252,17 @@
     opacity: 0.5;
     }
     
-    .grid{
-        display:grid;
-    }
     .clothes{
         display:flex;
-        gap:10%;
+        gap:100%;
     }
     .img_tenue{
         margin-top:5%;
+    }
+    .clothes_texte{
+        font-family: "Poppins";
+        font-size: 20px;
+        line-height: 25px;
     }
     /*-----------------Horaire --------------*/
     

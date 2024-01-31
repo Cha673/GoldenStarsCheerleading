@@ -175,7 +175,7 @@
                                 $text_img=$img_other['name_accessory'];
                                 $img_accesory=$img_other['img_acessory'];
                                 ?>
-                        <div><?php echo($text_img) ?></div>
+                        <div class="clothes_texte"><?php echo($text_img) ?></div>
                         <img  class="img_tenue" 
                             src="<?php echo ($img_accesory['sizes']["medium"]);?>" 
                             height="<?php echo ($img_accesory['sizes']["medium-height"]);?>" 
