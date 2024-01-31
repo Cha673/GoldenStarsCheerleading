@@ -29,12 +29,17 @@
             <div class="instagram">
                 <div class="button_yellow" id="bouton_reseaux">
                 <button> 
-                    <a href="https://www.instagram.com/goldenstars_cheer/"> 
+                    <a href="<?php echo($link_insta) ?>"> 
                         <div class="stars star-container">
-                            <div class="star4"> <img src="img/yellow_button/star_4n.svg"> </div>
-                            <div class="star3"> <img src="img/yellow_button/star_3n.svg"> </div>
+                            <div class="star4"> <img src="<?php echo get_template_directory_uri() . '/illustration/yellow_button/star_4n.svg'?>"> </div>
+                            <div class="star3"> <img src="<?php echo get_template_directory_uri() . '/illustration/yellow_button/star_3n.svg'?>"> </div>
                         </div>
-                        <img src="photos/contact/instagram.svg" class="logo_reseaux"/>
+                        <img  class="logo" 
+                            src="<?php echo ($logo_insta['sizes']["medium"]);?>" 
+                            height="<?php echo ($logo_insta['sizes']["medium-height"]);?>" 
+                            width="<?php echo ($logo_insta['sizes']["medium-width"]);?>" 
+                            alt="<?php echo ($logo_insta['alt']);?>" 
+                        title="logo instagram" >
                     </a>
                 </button>
                 </div>
@@ -44,12 +49,17 @@
             <div class="tiktok">
                 <div class="button_yellow" id="bouton_reseaux">
                     <button> 
-                        <a href="https://www.tiktok.com/@goldenstars_cheer?_t=8j3beqNb7Ng&_r=1 "> 
+                        <a href="<?php echo($link_tiktok) ?>"> 
                             <div class="stars star-container">
-                                <div class="star4"> <img src="img/yellow_button/star_4n.svg"> </div>
-                                <div class="star3"> <img src="img/yellow_button/star_3n.svg"> </div>
+                                <div class="star4"> <img src="<?php echo get_template_directory_uri() . '/illustration/yellow_button/star_4n.svg'?>"> </div>
+                                <div class="star3"> <img src="<?php echo get_template_directory_uri() . '/illustration/yellow_button/star_3n.svg'?>"> </div>
                             </div>
-                            <img src="photos/contact/tiktok.svg" class="logo_reseaux"/>
+                            <img  class="logo" 
+                            src="<?php echo ($logo_tiktok['sizes']["medium"]);?>" 
+                            height="<?php echo ($logo_tiktok['sizes']["medium-height"]);?>" 
+                            width="<?php echo ($logo_tiktok['sizes']["medium-width"]);?>" 
+                            alt="<?php echo ($logo_tiktok['alt']);?>" 
+                        title="logo tiktok" >
                         </a>
                     </button>
                 </div>
@@ -59,12 +69,17 @@
             <div class="facebook">
                 <div class="button_yellow" id="bouton_reseaux">
                     <button> 
-                        <a href="https://www.facebook.com/people/Golden-Stars-Cheerleading/61551674859393/"> 
+                        <a href="<?php echo($link_facebook) ?>"> 
                             <div class="stars star-container">
-                                <div class="star4"> <img src="img/yellow_button/star_4n.svg"> </div>
-                                <div class="star3"> <img src="img/yellow_button/star_3n.svg"> </div>
+                                <div class="star4"> <img src="<?php echo get_template_directory_uri() . '/illustration/yellow_button/star_4n.svg'?>"> </div>
+                                <div class="star3"> <img src="<?php echo get_template_directory_uri() . '/illustration/yellow_button/star_3n.svg'?>"> </div>
                             </div>
-                            <img src="photos/contact/facebook.svg" class="logo_reseaux"/>
+                            <img  class="logo" 
+                            src="<?php echo ($logo_facebook['sizes']["medium"]);?>" 
+                            height="<?php echo ($logo_facebook['sizes']["medium-height"]);?>" 
+                            width="<?php echo ($logo_facebook['sizes']["medium-width"]);?>" 
+                            alt="<?php echo ($logo_facebook['alt']);?>" 
+                            title="logo tiktok" >
                         </a>
                     </button>
                 </div>
@@ -79,34 +94,32 @@
         <h2>Contactez-nous</h2>
 
         <div class="contact">
-        <img src="Photos/silhouette_blanche.svg" id="silhouette">
-        <div class="informations">
+        <img src="<?php echo get_template_directory_uri() . '/illustration/silhouette_blanche.png' ?>" id="silhouette">
+        <div class="informations_contact">
             <div class="categorie">
                 <div class="titre">
                     <h3>club</h3>
-                    <span class="mot_jaune">Golden Stars Cheerleading</span>
+                    <div class="mot_jaune"><?php echo($name_club)?></div>
                 </div>
 
                 <div>
                     <div class="p">
-                    goldenstars.cheerleading73@gmail.com<br>
-                    206 AVENUE GENERAL CARTIER<br>
-                    73000 CHAMBÉRY<br>
-                    R.N.A : W732011197<br>
-                    SIRET 923779011 00017<br>
+                    <?php echo($mail_club)?><br>
+                    <?php echo($adress_club)?><br>
+                    R.N.A : <?php echo($num_rna)?><br>
+                    SIRET <?php echo($num_siret)?><br>
                     </div>
                 </div>
 
                 <div class="titre">
                     <h3>président</h3>
-                    <span class="mot_jaune">Mr Christophe COLAS</span>
+                    <div class="mot_jaune"><?php echo($name_president)?></div>
                 </div>
                
                 <div>
                     <div class="p">
-                    06 50 43 17 23<br>
-                    156 AVENUE DU GRANIER<br>
-                    38530 PONTCHARRA<br>
+                    <?php echo($num_president)?><br>
+                    <?php echo($adress_president)?><br>
                     </div>
                 </div>
             </div>
@@ -133,8 +146,8 @@
                     <button> 
                         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> 
                             <div class="stars star-container">
-                                <div class="star4"> <img src="img/white_star_button/star_4n.svg"> </div>
-                                <div class="star3"> <img src="img/white_star_button/star_3n.svg"> </div>
+                                <div class="star4"> <img src="<?php echo get_template_directory_uri() . '/illustration/yellow_button/star_4n.svg'?>"> </div>
+                                <div class="star3"> <img src="<?php echo get_template_directory_uri() . '/illustration/yellow_button/star_3n.svg'?>"> </div>
                             </div>
                             Envoyer
                         </a>
@@ -142,7 +155,6 @@
                 </div>
             </form> 
         </div>
-        <img src="photos/fond_paillettes_gauche.svg" id="paillettes">
         </div>
 
 <?php

@@ -6,7 +6,7 @@
     margin-top: 50px;
     margin-bottom: 50px;
     position: relative;
-    width: 100%;
+    width: 82%;
     padding-left: 9%;
     padding-right: 9%;
 }
@@ -19,7 +19,10 @@
     padding-left: 9%;
     padding-right: 9%;
 }
-
+.logo{
+    width:70px;
+    height:70px;
+}
 .blanc .p{
     color: #0B0700;
     margin-top: 10%;
@@ -84,7 +87,7 @@ h3{
     z-index: -1;
 }
 
-.informations{
+.informations_contact{
     width: 50%;
 }
 
@@ -133,7 +136,7 @@ textarea{
     position: absolute;
     z-index: 1;
     left: 48%;
-    top: 147%;
+    top: 170%;
 }
 
 @media screen and (max-width: 768px){
