@@ -76,21 +76,21 @@ body{
 .informations{
     background-color:#FFC70A;
     border-radius:10px;
-    height:200px;
+    height:100%;
     width: 600px;
     margin-left:auto;
     margin-right:auto;
     position:relative;
     z-index:5;
     margin-bottom:40px;
+    padding-bottom:2%;
 
 }
     .flex{
         display:flex;
     }
     .center_accueil{
-        text-align:center;
-        align-items:center;
+        justify-content: center;
     }
         .logoI{
             margin-top:20px;
@@ -146,7 +146,7 @@ body{
 
         h2 {
             font-family:'Varsity',sans-serif;
-            font-weight: normal;
+            font-weight: 800;
             font-size:36px;
         }
 
@@ -159,6 +159,9 @@ body{
     }
     .h2_glitters{
         position:relative;
+    }
+    .underline_button_home{
+        justify-content: center;
     }
 
 .bloc{
@@ -211,11 +214,11 @@ div.blocks {
             font-weight: normal;
             font-size:36px;
             text-align:center;
-            margin-top:40px;
+            margin-top:5%;
         }
         p{
             color:#0B0700;
-            margin-top:80px;
+            margin-top:10%;
             text-align:center;
             font-family:'Poppins',sans-serif;
             font-size:20px;
@@ -232,6 +235,16 @@ div.blocks {
     }
 
 //----------Calendrier-----------------------
+.calendar_home{
+    color:#FFFDF4;
+    font-family:'Varsity',sans-serif;
+    font-weight: normal;
+    font-size:36px;
+    text-align:center;
+    margin-top:5%;
+
+
+}
 .horizontal_bar{
     border-top: 1px solid #FFFDF4;
     width: 80%;

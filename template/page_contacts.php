@@ -89,9 +89,10 @@
     </section>
 
     <section class="wrap">
-        
+        <div>
 
-        <h2>Contactez-nous</h2>
+        <h2 class="text_blanc">Contactez-nous</h2>
+        </div>
 
         <div class="contact">
         <img src="<?php echo get_template_directory_uri() . '/illustration/silhouette_blanche.png' ?>" id="silhouette">
@@ -126,31 +127,33 @@
         </div>
 
         <div class="formulaire">
-            <form method="post">
+        <form action="mailto:goldenstars.cheerleading73@gmail.com" 
+            method="get" enctype="text/plain" 
+            target="_blank" autocomplete="on"><br>
                 <label for="name">Nom</label><br>
-                <input type="text" id="nom" name="nom" /><br>
+                <input type="text" id="nom" name="nom" autocomplete="on"><br>
             
                 <label for="name">Prénom</label><br>
-                <input type="text" id="prenom" name="prenom" /><br>
+                <input type="text" id="prenom" name="prenom" autocomplete="on"><br>
             
                 <label for="mail">E-mail</label><br>
-                <input type="email" id="mail" name="mail" /><br>
+                <input type="email" id="mail" name="mail" autocomplete="on"><br>
             
                 <label for="mail">Objet</label><br>
-                <input type="text" id="objet" name="objet" /><br>
+                <input type="text" id="objet" name="objet" autocomplete="on"><br>
             
                 <label for="msg">Message</label><br>
                 <textarea name="message" style="height:100px"></textarea><br>
 
                 <div class="button_white"> 
                     <button> 
-                        <a href=""> 
+                        <div>
                             <div class="stars star-container">
                                 <div class="star4"> <img src="<?php echo get_template_directory_uri() . '/illustration/yellow_button/star_4n.svg'?>"> </div>
                                 <div class="star3"> <img src="<?php echo get_template_directory_uri() . '/illustration/yellow_button/star_3n.svg'?>"> </div>
                             </div>
                             Envoyer
-                        </a>
+                        </div>
                     </button>
                 </div>
             </form> 

@@ -41,7 +41,7 @@
 
                 <?php }?>
 
-                <div class="informations_paid"><?php echo($paid);?></div>
+                <div class="informations_paid "><?php echo($paid);?></div>
 
 
                 <img class="etoile_fond1" 

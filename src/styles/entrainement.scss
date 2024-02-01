@@ -159,6 +159,7 @@
     border-radius: 25px;
     padding:20px;
     margin-top:50px;
+    width:312px;
     }
     
     .carte_t>h3{
@@ -171,7 +172,6 @@
     
     .carte_t>p{
     color: #0B0700;
-    font-family: "Varsity Regular";
     font-size:20px;
     }
     
@@ -256,7 +256,7 @@
     
     .clothes{
         display:flex;
-        gap:100%;
+        gap:40%;
     }
     .img_tenue{
         margin-top:5%;
@@ -362,9 +362,10 @@
     }
     
     .gymnase>h3{
-    font-family: "Varsity Regular";
+    font-family: "Varsity";
     font-size:20px;
     color:#0B0700;
+    margin-bottom:2%;
 
     }
     

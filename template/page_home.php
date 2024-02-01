@@ -153,7 +153,7 @@
                                         alt="<?php echo ($glitter_text['alt']);?>"/>
                                 </div>
                                 <p class="bloc"><?php echo($bloc);?></p>
-                                <div class="underline_button">
+                                <div class="underline_button underline_button_home">
                                     <button class="underline">
                                         <div class="double_star"> 
                                             <img src="<?php echo get_template_directory_uri() . '/illustration/underline_button/double_star.svg';?>"> 
@@ -215,6 +215,7 @@
         </div>
 
 <!-------------------------------------------------Calendrier---------------------------------------------------->
+        <h2 class="calendar_home">LE CALENDRIER</h2>
         <div class="horizontal_bar vertical_bar">
             <div class="flex title_event">
                 <img src="<?php echo get_template_directory_uri() . '/illustration/petite_etoile_blanche.png';?>">
@@ -239,7 +240,8 @@
                         </div>
                     </div>
                     <div class="expansion">
-                        <p><?php echo($description);?></p>
+                        <p><?php echo($description);?>
+                    <?php if($link_pictures){ ?> <a href="<?php echo($link_pictures)?>"> Voir plus</a><?php }?></p><
                     </div>
                 </div>
 

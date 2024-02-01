@@ -56,7 +56,7 @@
                 </div>
             </div>
 
-        <section class="wrap">
+        <section class="wrap cheerleading">
             <div class="competition">
                 <div class="competition_text_photo">
                     <div class="photo_compet">
@@ -67,7 +67,7 @@
                         alt="<?php echo ($img_competition['alt']);?>"
                         title="cheerleading_competition"/> 
                     </div>
-                    <div class="text_compet">
+                    <div class="text_compet ">
                         <h2>LA COMPÉTITION</h2>
                         <div class="fond_noir">
                             <div class="text_cheerleading"><?php echo($explication)?></div>

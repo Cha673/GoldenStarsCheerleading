@@ -41,7 +41,7 @@
 
 <section class="wrap qui_sommes_nous">
     <img src="<?php echo get_template_directory_uri() . '/illustration/paillettes_fond.svg';?>" id="paillettes">
-    <div class="p margin5top" ><?php echo($text_values)?></div>
+    <div class="p margin5top p_white" ><?php echo($text_values)?></div>
 
     <div class="valeurs">
     <?php foreach ($values as $text) {
