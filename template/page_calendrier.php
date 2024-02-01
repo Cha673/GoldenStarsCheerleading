@@ -20,7 +20,7 @@
         </div>
 
         <div class="objectifs">
-            <img src="<?php echo get_template_directory_uri() . '/illustration/coupe.png' ?>" id="coupe">
+            <img src="<?php echo get_template_directory_uri() . '/illustration/coupe.png' ?>" class="coupe">
             <div class="p goal">
                 <?php  echo($goal);?>
             </div>

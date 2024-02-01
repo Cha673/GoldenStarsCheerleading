@@ -34,7 +34,7 @@
                             <div class="star4"> <img src="<?php echo get_template_directory_uri() . '/illustration/yellow_button/star_4n.svg'?>"> </div>
                             <div class="star3"> <img src="<?php echo get_template_directory_uri() . '/illustration/yellow_button/star_3n.svg'?>"> </div>
                         </div>
-                        <img  class="logo" 
+                        <img  class="logo_contact" 
                             src="<?php echo ($logo_insta['sizes']["medium"]);?>" 
                             height="<?php echo ($logo_insta['sizes']["medium-height"]);?>" 
                             width="<?php echo ($logo_insta['sizes']["medium-width"]);?>" 
@@ -54,7 +54,7 @@
                                 <div class="star4"> <img src="<?php echo get_template_directory_uri() . '/illustration/yellow_button/star_4n.svg'?>"> </div>
                                 <div class="star3"> <img src="<?php echo get_template_directory_uri() . '/illustration/yellow_button/star_3n.svg'?>"> </div>
                             </div>
-                            <img  class="logo" 
+                            <img  class="logo_contact" 
                             src="<?php echo ($logo_tiktok['sizes']["medium"]);?>" 
                             height="<?php echo ($logo_tiktok['sizes']["medium-height"]);?>" 
                             width="<?php echo ($logo_tiktok['sizes']["medium-width"]);?>" 
@@ -74,7 +74,7 @@
                                 <div class="star4"> <img src="<?php echo get_template_directory_uri() . '/illustration/yellow_button/star_4n.svg'?>"> </div>
                                 <div class="star3"> <img src="<?php echo get_template_directory_uri() . '/illustration/yellow_button/star_3n.svg'?>"> </div>
                             </div>
-                            <img  class="logo" 
+                            <img  class="logo_contact" 
                             src="<?php echo ($logo_facebook['sizes']["medium"]);?>" 
                             height="<?php echo ($logo_facebook['sizes']["medium-height"]);?>" 
                             width="<?php echo ($logo_facebook['sizes']["medium-width"]);?>" 
