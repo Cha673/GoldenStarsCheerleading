@@ -4,11 +4,13 @@
     get_header();
     $logo_insta=get_field('logo_instagram');
     $link_insta=get_field('link_instagram');
+    $name_insta=get_field('name_compte_insta');
     $logo_facebook=get_field('logo_facebook');
     $link_facebook=get_field('link_facebook');
+    $name_facebook=get_field('name_compte_facebook');
     $logo_tiktok=get_field('logo_tiktok');
     $link_tiktok=get_field('link_tiktok');
-    $logo_insta=get_field('logo_instagram');
+    $name_tiktok=get_field('name_compte_tiktok');
     $name_club=get_field('name_club');
     $mail_club=get_field('mail_club');
     $adress_club=get_field('adress_club');
@@ -21,9 +23,7 @@
     <section class="wrap">
         <h1>contact</h1>
     </section>
-    
-    <img src="Photos/grande_etoile_fond.svg" class="etoile_fond">
-    <section class="blanc">
+    <section class="blanc_contact">
         <h2>Réseaux sociaux</h2>
         <div class="reseaux">
             <div class="instagram">
@@ -43,7 +43,7 @@
                     </a>
                 </button>
                 </div>
-                <div class="p">@goldenstars_cheer</div>
+                <div class="p"><?php echo($name_insta)?></div>
             </div>
 
             <div class="tiktok">
@@ -63,7 +63,7 @@
                         </a>
                     </button>
                 </div>
-                <div class="p">@goldenstars_cheer</div>
+                <div class="p"><?php echo($name_tiktok)?></div>
             </div>
 
             <div class="facebook">
@@ -83,20 +83,20 @@
                         </a>
                     </button>
                 </div>
-                <div class="p">Golden Stars Cheerleading</div>
+                <div class="p"><?php echo($name_facebook)?></div>
             </div>
         </div>
     </section>
 
-    <!--<section class="wrap">-->
+    <section class="wrap">
         
 
         <h2>Contactez-nous</h2>
 
         <div class="contact">
         <img src="<?php echo get_template_directory_uri() . '/illustration/silhouette_blanche.png' ?>" id="silhouette">
-        <div class="informations_contact">
-            <div class="categorie">
+        <div >
+            <div class="categorie_contact">
                 <div class="titre">
                     <h3>club</h3>
                     <div class="mot_jaune"><?php echo($name_club)?></div>
@@ -144,7 +144,7 @@
 
                 <div class="button_white"> 
                     <button> 
-                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> 
+                        <a href=""> 
                             <div class="stars star-container">
                                 <div class="star4"> <img src="<?php echo get_template_directory_uri() . '/illustration/yellow_button/star_4n.svg'?>"> </div>
                                 <div class="star3"> <img src="<?php echo get_template_directory_uri() . '/illustration/yellow_button/star_3n.svg'?>"> </div>
@@ -156,7 +156,7 @@
             </form> 
         </div>
         </div>
-
+    </section>
 <?php
 get_footer();
 ?>

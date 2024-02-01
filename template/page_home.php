@@ -41,7 +41,7 @@
     // id de pages 
         $id_cheerleading=16;
         $id_club=12;
-        $id_entrainement=18;
+        $id_entrainement=404;
         $id_calendrier=24;
         $page_cheerleading = get_permalink($id_cheerleading);
         $page_club = get_permalink($id_club);
@@ -189,7 +189,7 @@
                     <p><?php echo($text_training);?></p>
                     <div class="button_yellow button_discover"> 
                     <button> 
-                        <a href="' . $page_entrainement . '"> 
+                        <a href="<?php echo($page_entrainement)?>"> 
                             <div class="stars star-container">
                                 <div class="star4"> 
                                     <img src="<?php echo get_template_directory_uri() . '/illustration/yellow_button/star_4n.svg';?>"> 

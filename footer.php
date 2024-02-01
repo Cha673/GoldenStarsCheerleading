@@ -23,6 +23,9 @@
     // echo("<pre>");
     // var_dump($logo_partner);
     // echo('</pre>');
+
+    $page_mentions_legales = 574; 
+    $page_url = get_permalink($page_mentions_legales);
     
 ?>
 
@@ -61,14 +64,14 @@
             <p class="center bottom"><?php echo($tel); ?></p>
             <p class="center bottom top"><?php echo($adress); ?></p>
         </div>
-        <div class=" center width_column">
-            <img class="logo align_center"
+        <div class=" center width_column ">
+            <img class="logo left"
                         src="<?php echo ($logo['sizes']["logo_footer"]);?>" 
                         height="<?php echo ($logo['sizes']["logo_footer-height"]);?>" 
                         width="<?php echo ($logo['sizes']["logo_footer-width"]);?>" 
                         alt="<?php echo ($logo['alt']);?>"
             />
-            <div>
+            <div class="left_logo">
                 <?php
                     if ($social_media) {
                         foreach ($social_media as $media) {
@@ -108,7 +111,7 @@
             </p>
         </div>
         <div>
-            <p>Mentions Légales</p>
+        <a href="<?php echo $page_url; ?>">Mentions Légales</a>
         </div>
     </div>
 

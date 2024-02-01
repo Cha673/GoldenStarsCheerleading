@@ -48,7 +48,7 @@
         
             <div class="fond_blanc_2">
                 <div class="roles">
-                        <h2>LES ROLES</h2>
+                        <h2>LES RÔLES</h2>
                         <div class="explications">
                             <div class="text_cheerleading2"><?php echo ($role);?>
                             </div>
@@ -68,7 +68,7 @@
                         title="cheerleading_competition"/> 
                     </div>
                     <div class="text_compet">
-                        <h2>LA COMPETITION</h2>
+                        <h2>LA COMPÉTITION</h2>
                         <div class="fond_noir">
                             <div class="text_cheerleading"><?php echo($explication)?></div>
                                 <div class="underline_button">

@@ -43,20 +43,21 @@
 
     .carte_n:nth-child(odd){
         background-color: #FFC70A;
+        color: black;
     }
 
     .carte_n:nth-child(even){
         background-color: #FFFDF4;
         color: black;
     }
-    
+
     .carte_n>p{ /*equipe*/
     font-size: 25px;
     color:#0B0700;
     }
     
     .carte_n>h3{ /*nom équipe*/
-    font-family:"Varcity Regular";
+    font-family: 'Varsity';
     font-size: 30px;
     color:#0B0700;
     }
@@ -134,6 +135,7 @@
     position: relative;
     padding-bottom:45px;
     overflow: hidden;
+    padding-top:2%;
     }
     
     .wrap>h2{
@@ -346,6 +348,7 @@
     gap:80px;
     text-align: center;
     margin-top:-90px;
+    color:#0B0700;
     }
     
     .gymnase>p{

@@ -18,7 +18,7 @@
                 <div class="presentation"><?php echo($inscription)?></div>
             </div>
             <div class="documents">
-                <h2 class="sub_title">DOCUMENTS A TELECHARGER</h2>
+                <h2 class="sub_title">DOCUMENTS A TÉLÉCHARGER</h2>
                 <img id="ligne_paillettes" 
                 src="<?php echo get_template_directory_uri() . '/illustration/paillettes_ligne_titre.png';?>" 
                 title="paillettes_ligne" alt="paillettes_ligne">

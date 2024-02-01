@@ -15,6 +15,11 @@
     $clothes_girls=get_field('clothes_girls');
     $trainers=get_field('trainers');
     $gymnase=get_field('gymnase');
+
+    $page_inscription = 405; 
+    $page_accueil=400;
+    $inscription = get_permalink($page_inscription);
+    $accueil=get_permalink($page_accueil);
 ?>
 
 
@@ -55,7 +60,7 @@
 
     <div class="button_white"> 
         <button> 
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> 
+            <a href="<?php echo $inscription; ?>"> 
                 <div class="stars star-container">
                     <div class="star4"> <img src="<?php echo get_template_directory_uri() . '/illustration/white_star_button/star_4j.svg'?>"> </div>
                     <div class="star3"> <img src="<?php echo get_template_directory_uri() . '/illustration/white_star_button/star_3j.svg'?>"> </div>
@@ -235,7 +240,7 @@
             </div>
             <?php }}?>
         </div>
-        <p> <a href=""> Regardez les "informations adhérents" pour des informations sur les entrainements au fil de la saison </a></p>
+        <p> <a href="<?php echo $accueil; ?>"> Regardez les "informations adhérents" pour des informations sur les entrainements au fil de la saison </a></p>
         <img class="silhouette_horaire" src="<?php echo get_template_directory_uri() . '/illustration/silhouette_jaune.png'?>">
     </div>
 </div>

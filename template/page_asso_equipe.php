@@ -18,7 +18,7 @@
 
 ?>
     <section class="wrap">
-            <h1>L'EQUIPE</h1>
+            <h1>L'ÉQUIPE</h1>
             <!-- partis coachs -->
             <div class="paillettes_titre">
                 <h2 class="margins_title">Qui sont les coachs ?</h2>
@@ -180,7 +180,7 @@
                     <div class="div7">
                         <div class="carre_jaune">
                             <div class="p"><span id="bold">Responsable du site internet, communication et photos : </span></div>
-                            <div class=text_centre class="p"><?php echo($comm) ?></div>
+                            <div class="p"><?php echo($comm) ?></div>
                         </div>
                     </div>
                     <div class="div8">
