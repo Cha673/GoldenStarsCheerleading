@@ -40,7 +40,7 @@
             
                     if ($image && $lien) {
                         ?>
-                        <a href="<?php echo esc_url($lien); ?>">
+                        <a href="<?php echo esc_url($lien); ?>" rel="noopener noreferrer"  target="_blank">
                             <img class="partner" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
                         </a>
                         <?php
@@ -80,7 +80,7 @@
                     
                             if ($logo && $link) {
                                 ?>
-                                <a href="<?php echo esc_url($link); ?>">
+                                <a href=<?php echo esc_url($link); ?> rel="noopener noreferrer"  target="_blank">
                                     <img src="<?php echo esc_url($logo['url']); ?>" alt="<?php echo esc_attr($logo['alt']); ?>">
                                 </a>
                                 <?php
@@ -103,17 +103,16 @@
 
     </div>
     <div class="bottom_footer flex space_between margin_side margin_top margin_bottom">
-        <div class="inline " >
-            <p>Crédits photos  : 
-            <a class="text-underline" href="<?php echo($link_photo1)?>"><?php echo($credit_1) ;?></a>
-             , 
-            <a  class="text-underline" href="<?php echo($link_photo2)?>"><?php echo($credit_2) ;?></a>
-            </p>
-        </div>
-        <div>
-        <a href="<?php echo $page_url; ?>">Mentions Légales</a>
-        </div>
+    <div class="inline">
+        <p>Crédits photos:
+            <a class="text-underline" href="<?php echo $link_photo1; ?>" rel="noopener noreferrer"  target="_blank"><?php echo $credit_1; ?></a>,
+            <a class="text-underline" href="<?php echo $link_photo2; ?>" rel="noopener noreferrer"  target="_blank"><?php echo $credit_2; ?></a>
+        </p>
     </div>
+    <div>
+        <a href="<?php echo $page_url; ?>" rel="noopener noreferrer"  target="_blank">Mentions Légales</a>
+    </div>
+</div>
 
 </footer>
     <?php wp_footer(); ?>
