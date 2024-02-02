@@ -145,9 +145,9 @@
                 <label for="msg">Message</label><br>
                 <textarea name="message" style="height:100px"></textarea><br>
 
-                <div class="button_white"> 
+                <div class="button_white_contact"> 
                     <button> 
-                        <div>
+                        <div class="button_contact_submit">
                             <div class="stars star-container">
                                 <div class="star4"> <img src="<?php echo get_template_directory_uri() . '/illustration/yellow_button/star_4n.svg'?>"> </div>
                                 <div class="star3"> <img src="<?php echo get_template_directory_uri() . '/illustration/yellow_button/star_3n.svg'?>"> </div>

@@ -11,8 +11,8 @@
     $baskets=get_field('infos_basket');
     $clothes_boys=get_field('clothes_boys');
     $other_clothes=get_field('other_clothes');
-    $accessory=get_field('accessory');
-    $clothes_girls=get_field('clothes_girls');
+    $clothes_acessory=get_field('clothes_acessory');
+    $clothes_girl=get_field('clothes_girls');
     $trainers=get_field('trainers');
     $gymnase=get_field('gymnase');
 
@@ -142,24 +142,24 @@
             <div>
                 <h2> L'uniforme </h2>
             <div class="clothes">
-            <!-- $clothes_boys=get_field('clothes_boys');
-    $other_clothes=get_field('other_clothes');
-    $accessory=get_field('accessory');
-    $clothes_girls -->
-                    <div class="column">
-                        <p>Filles</p>
-                        <?php if($clothes_girls){
-                            foreach($clothes_girls as $img_cloths_girl){
-                                $tenues_filles=$img_cloths_girl['img_clothes_girl'];
-                                ?>
-                                <img  class="img_tenue" 
-                                    src="<?php echo ($tenues_filles['sizes']["medium"]);?>" 
-                                    height="<?php echo ($tenues_filles['sizes']["medium-height"]);?>" 
-                                    width="<?php echo ($tenues_filles['sizes']["medium-width"]);?>" 
-                                    alt="<?php echo ($tenues_filles['alt']);?>" 
-                                title="image tenue filles" >
-                        <?php }}?>
-                    </div>
+            <div class="column">
+                <p>Filles</p>
+                <?php
+                    if ($clothes_girl) {
+                        foreach ($clothes_girl as $clothes) {
+                            $tenues_filles = $clothes['img_clothes_girl'];
+                ?>
+                            <img class="img_tenue" 
+                                src="<?php echo ($tenues_filles['sizes']['medium']); ?>" 
+                                height="<?php echo ($tenues_filles['sizes']['medium-height']); ?>" 
+                                width="<?php echo ($tenues_filles['sizes']['medium-width']); ?>" 
+                                alt="<?php echo ($tenues_filles['alt']); ?>" 
+                                title="image tenue filles">
+                <?php
+                        }
+                    }
+                ?>
+            </div>
                     <div class="column">
                         <p>Garçons</p>
                         <?php if($clothes_boys){
@@ -167,25 +167,26 @@
                                 $tenues_garcons=$img_cloths_boys['img_clothes_boys'];
                                 ?>
                                 <img  class="img_tenue" 
-                                    src="<?php echo ($tenues_garcons['sizes']["medium"]);?>" 
-                                    height="<?php echo ($tenues_garcons['sizes']["medium-height"]);?>" 
-                                    width="<?php echo ($tenues_garcons['sizes']["medium-width"]);?>" 
-                                    alt="<?php echo ($tenues_garcons['alt']);?>" 
+                                    src="<?php echo ($tenues_garcons["sizes"]["medium"]);?>" 
+                                    height="<?php echo ($tenues_garcons["sizes"]["medium-height"]);?>" 
+                                    width="<?php echo ($tenues_garcons["sizes"]["medium-width"]);?>" 
+                                    alt="<?php echo ($tenues_garcons["alt"]);?>" 
                                 title="image tenue garçons" >
                         <?php }}?>
                     </div>
                     <div class="column">
-                    <?php if($accessory){
-                            foreach($accessory as $img_other){
-                                $text_img=$img_other['name_accessory'];
-                                $img_accesory=$img_other['img_acessory'];
+                    <?php if($clothes_acessory){
+                            foreach($clothes_acessory as $img_other){
+                                $nom=$img_other['name_accessory'];
+                                $img_accesory=$img_other['img_accessory'];
+
                                 ?>
-                        <div class="clothes_texte"><?php echo($text_img) ?></div>
+                        <div class="clothes_texte"><?php echo($nom) ?></div>
                         <img  class="img_tenue" 
-                            src="<?php echo ($img_accesory['sizes']["medium"]);?>" 
-                            height="<?php echo ($img_accesory['sizes']["medium-height"]);?>" 
-                            width="<?php echo ($img_accesory['sizes']["medium-width"]);?>" 
-                            alt="<?php echo ($img_accesory['alt']);?>" 
+                            src="<?php echo ($img_accesory["sizes"]["medium"]);?>" 
+                            height="<?php echo ($img_accesory["sizes"]["medium-height"]);?>" 
+                            width="<?php echo ($img_accesory["sizes"]["medium-width"]);?>" 
+                            alt="<?php echo ($img_accesory["alt"]);?>" 
                         title="image tenue autres" >
                         <?php }}?>
                     </div>
