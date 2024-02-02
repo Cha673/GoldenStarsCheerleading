@@ -77,7 +77,7 @@
                                         <img src="<?php echo get_template_directory_uri() . '/illustration/underline_button/double_star.svg';?>">
                                         </div>
                                         <div>
-                                            <a href=<?php echo $dictionnary['url']; ?>>Le lexique du cheerleading</a>
+                                            <a href=<?php echo $dictionnary['url']; ?> target="_blank">Le lexique du cheerleading</a>
                                             <div class="trait"> </div> 
                                             </div>
                                         </div>

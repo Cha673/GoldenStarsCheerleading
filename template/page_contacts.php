@@ -29,7 +29,7 @@
             <div class="instagram">
                 <div class="button_yellow" id="bouton_reseaux">
                 <button> 
-                    <a href="<?php echo($link_insta) ?>"> 
+                    <a href="<?php echo($link_insta) ?>" target="_blank"> 
                         <div class="stars star-container">
                             <div class="star4"> <img src="<?php echo get_template_directory_uri() . '/illustration/yellow_button/star_4n.svg'?>"> </div>
                             <div class="star3"> <img src="<?php echo get_template_directory_uri() . '/illustration/yellow_button/star_3n.svg'?>"> </div>
@@ -49,7 +49,7 @@
             <div class="tiktok">
                 <div class="button_yellow" id="bouton_reseaux">
                     <button> 
-                        <a href="<?php echo($link_tiktok) ?>"> 
+                        <a href="<?php echo($link_tiktok) ?>" target="_blank"> 
                             <div class="stars star-container">
                                 <div class="star4"> <img src="<?php echo get_template_directory_uri() . '/illustration/yellow_button/star_4n.svg'?>"> </div>
                                 <div class="star3"> <img src="<?php echo get_template_directory_uri() . '/illustration/yellow_button/star_3n.svg'?>"> </div>
@@ -69,7 +69,7 @@
             <div class="facebook">
                 <div class="button_yellow" id="bouton_reseaux">
                     <button> 
-                        <a href="<?php echo($link_facebook) ?>"> 
+                        <a href="<?php echo($link_facebook) ?>" target="_blank"> 
                             <div class="stars star-container">
                                 <div class="star4"> <img src="<?php echo get_template_directory_uri() . '/illustration/yellow_button/star_4n.svg'?>"> </div>
                                 <div class="star3"> <img src="<?php echo get_template_directory_uri() . '/illustration/yellow_button/star_3n.svg'?>"> </div>

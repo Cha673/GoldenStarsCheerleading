@@ -21,11 +21,11 @@
             Service client : 1007<br><br>
 
             Réalisation du site internet :<br>
-            FY Elisa : Chargée de projet (<a href="https://www.behance.net/elisafy">lien portfolio</a>)<br>
-            NIVEAU Chloé : Chargée de contenu (<a href="https://www.behance.net/chloniveau1">lien portfolio</a>)<br>
+            FY Elisa : Chargée de projet (<a href="https://www.behance.net/elisafy" target="_blank">lien portfolio</a>)<br>
+            NIVEAU Chloé : Chargée de contenu (<a href="https://www.behance.net/chloniveau1" target="_blank">lien portfolio</a>)<br>
             DEAGE Eryne : UX/UI designer<br>
-            SPILLEBOUT Charlotte : Développeuse web  (<a href="https://www.instagram.com/_charlotte_portfolio/">lien portfolio</a>) <br>
-            Site réalisé dans le cadre d’un projet étudiant du <a href="https://mmi.univ-smb.fr/site/">département MMI</a> <br>
+            SPILLEBOUT Charlotte : Développeuse web  (<a href="https://www.instagram.com/_charlotte_portfolio/" target="_blank">lien portfolio</a>) <br>
+            Site réalisé dans le cadre d’un projet étudiant du <a href="https://mmi.univ-smb.fr/site/" target="_blank">département MMI</a> <br>
         </div>
 
         <h2>2 – Propriété intellectuelle et contrefaçons</h2>

@@ -159,7 +159,7 @@
                                             <img src="<?php echo get_template_directory_uri() . '/illustration/underline_button/double_star.svg';?>"> 
                                         </div>
                                         <div>
-                                            <a href=<?php echo $link; ?>><?php echo($button) ;?></a>
+                                            <a href=<?php echo $link; ?> target="_blank"><?php echo($button) ;?></a>
                                             <div class="trait"> </div> 
                                         </div>
                                     </button>
@@ -189,7 +189,7 @@
                     <p><?php echo($text_training);?></p>
                     <div class="button_yellow button_discover"> 
                     <button> 
-                        <a href="<?php echo($page_entrainement)?>"> 
+                        <a href="<?php echo($page_entrainement)?>" target="_blank"> 
                             <div class="stars star-container">
                                 <div class="star4"> 
                                     <img src="<?php echo get_template_directory_uri() . '/illustration/yellow_button/star_4n.svg';?>"> 
@@ -241,7 +241,7 @@
                     </div>
                     <div class="expansion">
                         <p><?php echo($description);?>
-                    <?php if($link_pictures){ ?> <a href="<?php echo($link_pictures)?>"> Voir plus</a><?php }?></p><
+                    <?php if($link_pictures){ ?> <a href="<?php echo($link_pictures)?>" target="_blank"> Voir plus</a><?php }?></p><
                     </div>
                 </div>
 

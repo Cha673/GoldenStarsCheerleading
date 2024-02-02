@@ -33,7 +33,7 @@
                                 <img src="<?php echo get_template_directory_uri() . '/illustration/underline_button/double_star.svg';?>"> 
                             </div>
                             <div>
-                                <a href=<?php echo $docs['url']; ?>><?php echo($name) ;?></a>
+                                <a href=<?php echo $docs['url']; ?> target="_blank"><?php echo($name) ;?></a>
                                 <div class="trait"> </div> 
                             </div>
                         </button>
@@ -97,7 +97,7 @@
                     <p>Vous ne souhaitez pas vous inscrire mais vous voulez nous soutenir ?</p>
                     <div class="button_white"> 
                         <button> 
-                            <a href="<?php echo($link_don) ?>"> 
+                            <a href="<?php echo($link_don) ?>" target="_blank"> 
                                 <div class="stars star-container">
                                     <div class="star4"> 
                                         <img src="<?php echo get_template_directory_uri() . '/illustration/white_star_button/star_4j.svg';?>">

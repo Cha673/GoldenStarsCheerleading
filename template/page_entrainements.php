@@ -60,7 +60,7 @@
 
     <div class="button_white"> 
         <button> 
-            <a href="<?php echo $inscription; ?>"> 
+            <a href="<?php echo $inscription; ?>" target="_blank"> 
                 <div class="stars star-container">
                     <div class="star4"> <img src="<?php echo get_template_directory_uri() . '/illustration/white_star_button/star_4j.svg'?>"> </div>
                     <div class="star3"> <img src="<?php echo get_template_directory_uri() . '/illustration/white_star_button/star_3j.svg'?>"> </div>
@@ -95,7 +95,7 @@
                             <div class="double_star"> 
                                 <img src="<?php echo get_template_directory_uri() . '/illustration/underline_button/double_star.svg' ?>"> 
                             </div>
-                            <div><a href="<?php  echo($link_page)?>"><?php echo($link_other_page)?></a>
+                            <div><a href="<?php  echo($link_page)?>" target="_blank"><?php echo($link_other_page)?></a>
                             <div class="trait"> </div> </div>
                         </button>
                         <?php } ?>
@@ -241,7 +241,7 @@
             </div>
             <?php }}?>
         </div>
-        <p> <a href="<?php echo $accueil; ?>"> Regardez les "informations adhérents" pour des informations sur les entrainements au fil de la saison </a></p>
+        <p> <a href="<?php echo $accueil; ?>" target="_blank"> Regardez les "informations adhérents" pour des informations sur les entrainements au fil de la saison </a></p>
         <img class="silhouette_horaire" src="<?php echo get_template_directory_uri() . '/illustration/silhouette_jaune.png'?>">
     </div>
 </div>
