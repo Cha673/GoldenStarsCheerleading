@@ -514,20 +514,6 @@
     transform: rotate(-20deg);
     }
     
-    .mobile_only{
-    display:none;
-    }
-    
-    /*-------------------------VERSION MOBILE------------------*/
-    @media screen and (max-width:768px) {
-    
-    .mobile_only{
-    display:flex;
-    }
-    
-    .desktop_only{
-    display:none;
-    }
     
     /*---------------------------Niveaux---------------------*/
     .niveaux{
@@ -825,4 +811,4 @@
     display:none;
     }
     
-    }
+    

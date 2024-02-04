@@ -13,26 +13,54 @@
     ?>
     <body>
         <header >
-        <div class="display black menu margin_side">
-        <a href="<?php echo(get_home_url()) ?>">
-            <img class="logo"
-                src="<?php echo ($logo_allonge['sizes']["logo_header"]);?>" 
-                height="<?php echo ($logo_allonge['sizes']["logo_header-height"]);?>" 
-                width="<?php echo ($logo_allonge['sizes']["logo_header-width"]);?>" 
-                alt="<?php echo ($logo_allonge['alt']);?>"
-            />
-        </a>
-            <!-- <nav id=#nav> -->
-                <?php
-                    wp_nav_menu(array(
-                            'menu' => 'header',
-        
+        <div class="display black menu margin_side desktop_only">
+                <a href="<?php echo(get_home_url()) ?>">
+                    <img class="logo"
+                        src="<?php echo ($logo_allonge['sizes']["logo_header"]);?>" 
+                        height="<?php echo ($logo_allonge['sizes']["logo_header-height"]);?>" 
+                        width="<?php echo ($logo_allonge['sizes']["logo_header-width"]);?>" 
+                        alt="<?php echo ($logo_allonge['alt']);?>"
+                    />
+                </a>
+                    <!-- <nav id=#nav> -->
+                        <?php
+                            wp_nav_menu(array(
+                                    'menu' => 'header',
+                
+                                ));
+                            
+                        ?>
+                    <!-- <img class="burger"src="<?php echo get_template_directory_uri() . '/illustration/menu_burger.png';?>">
+                    <img class="cross"src="<?php echo get_template_directory_uri() . '/illustration/petite_etoile_blanche.png';?>"> 
+                    </nav> -->
+        </div>
+
+        <div class="mobile_only">
+
+            <a href="<?php echo(get_home_url()) ?>">
+                        <img class="logo"
+                            src="<?php echo ($logo_allonge['sizes']["logo_header"]);?>" 
+                            height="<?php echo ($logo_allonge['sizes']["logo_header-height"]);?>" 
+                            width="<?php echo ($logo_allonge['sizes']["logo_header-width"]);?>" 
+                            alt="<?php echo ($logo_allonge['alt']);?>"
+                        />
+            </a>
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <?php
+                        wp_nav_menu(array(
+                                'menu' => 'header',
+            
                         ));
+                        
+                    ?>
+                </div>
+            </nav>
                     
-                ?>
-            <!-- <img class="burger"src="<?php echo get_template_directory_uri() . '/illustration/menu_burger.png';?>">
-            <img class="cross"src="<?php echo get_template_directory_uri() . '/illustration/petite_etoile_blanche.png';?>"> 
-            </nav> -->
         </div>
 
         </header>

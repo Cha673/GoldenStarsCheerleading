@@ -3,7 +3,6 @@ __webpack_public_path__ = window.WP.publicPath; // WP.publicPath come from funct
 
 import './main.scss'
 import Router from './utils/Router'
-import './js/menu_burger.js';
 import './js/calendrier.js';
 
 
