@@ -94,7 +94,9 @@
                     </div>
                     <div class="expansion">
                         <p><?php echo($bloc_event);?>
+                        <?php if($link_image){?>
                         <a href="<?php echo ($link_image); ?>" target="_blank">Voir les images</a>
+                        <?php }?>
                         </p>
                        
                     </div>

@@ -241,7 +241,7 @@
                     </div>
                     <div class="expansion">
                         <p><?php echo($description);?>
-                    <?php if($link_pictures){ ?> <a href="<?php echo($link_pictures)?>" target="_blank"> Voir plus</a><?php }?></p><
+                    <?php if($link_pictures){ ?> <a href="<?php echo($link_pictures)?>" target="_blank"> Voir plus</a><?php }?></p>
                     </div>
                 </div>
 

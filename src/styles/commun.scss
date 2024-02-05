@@ -56,18 +56,19 @@ p{
 .text_blanc{
     color:#FFFDF4;
 }
-.mobile_only{
-    display:none;
+.desktop_only {
+    display: block;
 }
-    
-    /*-------------------------VERSION MOBILE------------------*/
-@media screen and (max-width:768px) {
-    
-    .mobile_only{
-    display:flex;
+
+.mobile_only{
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .desktop_only {
+        display: none;
     }
-    
-    .desktop_only{
-    display:none;
+
+    .mobile_only{
+        display: flex;
     }
 }

@@ -227,21 +227,9 @@
         grid-area: 4 / 3 / 5 / 5;
      }
 
-    .mobile_only{
-        display: none;
-    }
-    
 
 
      @media screen and (max-width: 768px) {
-
-        .mobile_only{
-            display: flex;
-        }
-
-        .desktop_only{
-            display: none;
-        }
         .coach {
             flex-direction: column;
         }
