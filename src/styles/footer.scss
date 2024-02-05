@@ -3,6 +3,9 @@ footer{
 
     p{
         font-size:16px;
+        @media screen and (max-width: 758px) { 
+            font-size: 13px;
+        }
     }
     .flex{
         display:flex;
@@ -24,9 +27,16 @@ footer{
     .left{
         margin-left:20%;
 
+        @media screen and (max-width: 758px) { 
+            margin-left:0;
+        }
+
     }
     .left_logo{
         margin-left:35%;
+        @media screen and (max-width: 758px) { 
+            margin-left:0;
+        }
 
     }
         .bottom{
@@ -74,7 +84,7 @@ footer{
     font-size:20px;
 
     @media screen and (max-width: 768px) {
-        
+        margin-left:0;
         margin-bottom:2rem;
         
     }

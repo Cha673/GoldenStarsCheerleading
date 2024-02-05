@@ -2,12 +2,18 @@
     font-family:'Poppins',sans-serif;
     font-size : 28px;
     font-weight: bold;
+    @media screen and (max-width: 758px) {    
+        font-size: 23px;
+}
 }
 
 .H2{
     font-family:'Poppins',sans-serif;
     font-size : 20px;
     font-weight: bold;
+    @media screen and (max-width: 758px) {
+        font-size: 20px;
+}
 }
 
 .title_home{
@@ -17,6 +23,9 @@ body{
     font-family:'Poppins',sans-serif;
     font-weight:400;
     font-size:16px;
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+    }
 }
 
 //CSS image en fond avec logo dessus-----
@@ -32,6 +41,10 @@ body{
     width: 100%; /* ajustez la largeur de la forme selon vos besoins */
     height: 800px;
     background: linear-gradient(to bottom, rgba(11, 7, 0, 0), rgba(0, 0, 0, 1));
+
+    @media screen and (max-width: 768px){
+        height:300px;
+    }
 }
 
 .over{
@@ -82,12 +95,19 @@ body{
     margin-right:auto;
     position:relative;
     z-index:5;
-    margin-bottom:40px;
-    padding-bottom:2%;
+    padding:2%;
+
+    @media screen and (max-width: 758px) {
+        width: 80%;
+        margin-top:80%;
+    }
 
 }
     .flex{
         display:flex;
+        @media screen and (max-width: 758px) { 
+            flex-direction: column;
+        }
     }
     .center_accueil{
         justify-content: center;
@@ -103,6 +123,10 @@ body{
             font-size:27px;
             color:#0B0700;
             margin-left:20px;
+
+            @media screen and (max-width: 758px) { 
+                font-size: 16px;
+            }
         }
 
         .text_info_p{
@@ -110,6 +134,10 @@ body{
             text-align:center;
             font-size:18px;;
             color:#0B0700;
+
+            @media screen and (max-width: 758px) { 
+                font-size: 15px;
+            }
         }
 
 
@@ -119,12 +147,20 @@ body{
     position: absolute;
     right: 0;
     top: 550px;
+
+    @media screen and (max-width: 768px){
+        display: none;
+    }
 }
 
 .stars-center{
     position: absolute;
     right: 300px;
     top: 800px;
+
+    @media screen and (max-width: 768px){
+        display: none;
+    }
 }
 
 //blocs de texte - paragraphes-------------------------
@@ -132,6 +168,10 @@ body{
 .column{
     width:30%;
     text-align:center;
+
+    @media screen and (max-width:768px){
+        width: 84%;
+    }
 }
     .title{
         position:relative;
@@ -148,6 +188,10 @@ body{
             font-family:'Varsity',sans-serif;
             font-weight: 800;
             font-size:36px;
+
+            @media screen and (max-width: 758px) {
+                font-size: 20px;
+        }
         }
 
         img {
@@ -169,14 +213,29 @@ body{
     font-family:'Poppins',sans-serif;
     font-size:20px;
 
+    @media screen and (max-width: 758px) { 
+        font-size: 13px;
+    }
+
 }  
 div.blocks {
     > div.column:nth-of-type(even) {
         margin-left:800px;
+
+        @media screen and (max-width:768px){
+            padding:8%;
+            margin-left:0;
+        }
     }
 
     > div.column:nth-of-type(odd) {
         margin-left:200px;
+
+        @media screen and (max-width:768px){
+            width: 84%;
+            padding:8%;
+            margin-left:0;
+        }
     }
 }
 
@@ -185,6 +244,11 @@ div.blocks {
     z-index:-1;
     position:absolute;
     top:1150px;
+
+    @media screen and (max-width:768px){
+        display:none;
+    }
+    
 
 }
 .top90{
@@ -195,6 +259,9 @@ div.blocks {
     .column_50{
         width:50%;
 
+        @media screen and (max-width: 758px) { 
+            width:100%;
+        }
         .training{
             width:100%;
             height:100%;
@@ -208,6 +275,11 @@ div.blocks {
         padding:30px;
         text-align:justify;
 
+        @media screen and (max-width: 758px) {
+            height:220px;
+            padding:0;
+        }
+
         h2{
             color:#0B0700;
             font-family:'Varsity',sans-serif;
@@ -215,6 +287,10 @@ div.blocks {
             font-size:36px;
             text-align:center;
             margin-top:5%;
+
+            @media screen and (max-width: 758px) {
+                font-size: 20px;
+            }
         }
         p{
             color:#0B0700;
@@ -222,6 +298,10 @@ div.blocks {
             text-align:center;
             font-family:'Poppins',sans-serif;
             font-size:20px;
+
+            @media screen and (max-width: 758px) { 
+                font-size: 13px;
+            }
         }
     }
 
@@ -243,6 +323,10 @@ div.blocks {
     text-align:center;
     margin-top:5%;
 
+    @media screen and (max-width: 758px) {
+        font-size: 20px;
+}
+
 
 }
 .horizontal_bar{
@@ -255,6 +339,10 @@ div.blocks {
     border-left: 1px solid #FFFDF4;
     height: 30%;
     margin-left:80px;
+
+    @media screen and (max-width: 758px) {
+        margin-left:8%;
+}
 }
 .title_event{
 
@@ -264,6 +352,12 @@ div.blocks {
     margin-top:20px;
     margin-left:60px;
     margin-bottom:40px;
+
+    @media screen and (max-width: 758px) {
+        display: flex;
+        flex-direction: row;
+        margin-left: 8%;
+    }
 
 
     p{
@@ -276,36 +370,66 @@ div.blocks {
 }
 
 //------------------------Photos noir et blanc et couleurs hover
-.photosnb{
-    width:100%;
-    height:600px;
-    display:flex;
-    gap:10px;
-    margin-top:80px;
-    margin-bottom:80px;
+.photosnb {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    gap: 10px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 
-}
-.vertical{
-    width:50%;
-    height:100%;
-    display:flex;
-    gap:10px;
-
-    .image{
-        width: 50%;
-        height: 100%;
+    @media screen and (max-width: 758px) {
+        flex-direction: column;
+        width: 82%;
+        height: auto;
+        padding-right: 8%;
+        padding-left: 8%;
     }
 }
-.horizontal{
-    width:50%;
-    height:100%;
-    display:flex;
-    flex-direction: column;
-    gap:10px;
 
-    .image{
-        height: calc(50% - 5px);
+.vertical {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @media screen and (max-width: 758px) {
         width: 100%;
+        height: 100%;
+    }
+
+    .image {
+        width: 100%;
+        height: 50%;
+
+        .img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.horizontal {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @media screen and (max-width: 758px) {
+        width: 100%;
+        height: 100%;
+    }
+
+    .image {
+        height: 50%;
+        width: 100%;
+
+        .img {
+            max-width: 100%;
+            height: auto;
+        }
     }
 }
 .image{

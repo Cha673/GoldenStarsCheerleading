@@ -4,6 +4,9 @@ font-weight: 400;
 font-size: 20px;
 text-align: justify;
 line-height: 25px;
+@media screen and (max-width: 758px) { 
+    font-size: 13px;
+}
 
 p + ul{
     margin-top: 2%;
@@ -27,6 +30,10 @@ ul{
     text-align: justify;
     line-height: 25px;
     color:#0B0700;
+
+    @media screen and (max-width: 758px) { 
+        font-size: 13px;
+    }
 
 
     div + ul + div{
@@ -78,6 +85,9 @@ ul{
         color: #0B0700;
         margin-top:0px;
         line-height: normal;
+        @media screen and (max-width: 758px) { 
+            font-size: 13px;
+        }
     }
     
 
@@ -217,6 +227,7 @@ ul{
             height: 79px;
             top: 114%;
             right: 30%;
+            display:none;
         }
         .histoire{
             margin-top: 30px;

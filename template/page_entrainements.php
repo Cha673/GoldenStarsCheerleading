@@ -91,7 +91,7 @@
                 </div>
                     <div class="underline_button">
                         <?php if($link_other_page) { ?>
-                        <button class="underline">
+                        <button class="underline button_center_responsive">
                             <div class="double_star"> 
                                 <img src="<?php echo get_template_directory_uri() . '/illustration/underline_button/double_star.svg' ?>"> 
                             </div>

@@ -95,7 +95,6 @@
         </div>
 
         <div class="contact">
-        <img src="<?php echo get_template_directory_uri() . '/illustration/silhouette_blanche.png' ?>" id="silhouette">
         <div >
             <div class="categorie_contact">
                 <div class="titre">
@@ -145,6 +144,10 @@
                 <label for="msg">Message</label><br>
                 <textarea name="message" style="height:100px"></textarea><br>
 
+                <p class="rgpd">Les données collectées via ce formulaire ne seront pas revendues ou données
+                    à des entreprises tierces, elles seront utilisées
+                    a des fins commerciales avec le propriétaire de l'association GoldenStarsCheerleading.
+                </p>
                 <div class="button_white_contact"> 
                     <button> 
                         <div class="button_contact_submit">
