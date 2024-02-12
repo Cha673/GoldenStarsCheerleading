@@ -221,6 +221,7 @@
     
     .partie_gauche{
     position:relative;
+
     }
     
     .image_pgauche{
@@ -568,10 +569,12 @@
     font-size: 14px;
     margin-top:5px;
     }
+    @media screen and (max-width: 768px){
     .paillettes{ /*paillettes*/
     bottom:70px;
     left:-250px;
     width: 1200px;
+    }
     }
     .niveaux>.button_white{ /*bouton s'inscrire*/
     margin-top:20px;
@@ -594,14 +597,15 @@
     text-align: center;
     }
     
-    .carte_tarif{
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-left:0px;
-    margin-top:-20px;
-    gap:0px;
-    }
+    @media screen and (max-width: 768px){
+        .carte_tarif{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-left:0px;
+        margin-top:-20px;
+        gap:0px;
+        }
     
     .carte_t{
     border-style:solid;
@@ -633,12 +637,15 @@
     }
     
     /*------------------------tenue------------------------*/
-    .tenue_entrainement>.wrap{
-    padding-bottom:0px;
-    flex-direction: column;
-    justify-content: center;
-    gap:0px;
-    }
+        .tenue_entrainement>.wrap{
+        padding-bottom:0px;
+        flex-direction: column;
+        justify-content: center;
+        gap:0px;
+        }
+
+
+    
     
     .demande{
     width:100%;
@@ -653,9 +660,9 @@
     font-size:13px;
     }
     
-    .demande>img{
-    width:20%;
-    }
+    // .demande>img{
+    // width:20%;
+    // }
     
     .partie_droite>p{
     font-size:13px;
@@ -666,14 +673,14 @@
     padding-top:36px;
     }
     
-    .image_pgauche{
-    display: flex;
-    position: relative;
-    flex-direction:column-reverse;
-    padding-right:0px;
-    padding-top:0px;
-    margin-left:-40px;
-    }
+        .image_pgauche{
+        display: flex;
+        position: relative;
+        flex-direction:column-reverse;
+        padding-right:0px;
+        padding-top:0px;
+        margin-left:-40px;
+        }
     
     .chaussures{
     margin-top:0px;
@@ -713,10 +720,11 @@
     }
     
     /*-----------------Horaire --------------*/
-    .horaire{ /* encadrés*/
-    gap:30px;
-    margin-top:30px;
-    }
+        .horaire{ /* encadrés*/
+        gap:30px;
+        margin-top:30px;
+        }
+    
     
     .date{ /*encadrés individuels*/
     display: flex;
@@ -822,4 +830,4 @@
     display:none;
     }
     
-    
+}

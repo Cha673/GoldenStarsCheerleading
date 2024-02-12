@@ -25,7 +25,7 @@
                 />
             </a>
         <div class="burger_click">
-            <div class="">
+            <div>
             <span class="line burger"></span>
             <span class="line2 burger"></span>
             <span class="line3 burger"></span>

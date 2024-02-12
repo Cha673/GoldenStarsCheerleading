@@ -134,12 +134,12 @@
 
 .fond_blanc{
     background: #FFFDF4;
-    padding-top: 5%;
     padding-bottom: 5%;
     padding-left: 9%;
     padding-right: 9%;
     margin-top: 105px;
     width: 82%;
+    height: 600px;
 }
 
 .fond_blanc h2{
@@ -168,20 +168,23 @@
     text-align: center;
     color:#0B0700;
 }
-
-.carre_jaune_mobile{
-    display: inline-flex;
-    padding: 15px 25px;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-    border-radius: 25px;
-    background: #FFC70A;
+.mobile_only{
+    .carre_jaune_mobile{
+        display: inline-flex;
+        padding: 15px 25px;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        border-radius: 25px;
+        background: #FFC70A;
+    }
+    
+    .carre_jaune_mobile .p{
+        text-align: center;
+    }
 }
 
-.carre_jaune_mobile .p{
-    text-align: center;
-}
+
 
 .parent {
     display: grid;

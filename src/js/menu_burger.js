@@ -4,7 +4,7 @@ function burger(element) {
     const burger2 = element.querySelector('.line2');
     const burger3 = element.querySelector('.line3');
 
-    if (menu.style.display === 'block') {
+    if (menu.style.display == 'block') {
         menu.style.display = 'none';
         burger1.style.transform = 'rotate(0deg)';
         burger2.style.transform = 'rotate(0deg)';
@@ -13,7 +13,6 @@ function burger(element) {
         menu.style.display = 'block';
         burger1.style.transform = ' translateY(8px)';
         burger1.style.transform += 'rotate(40deg)';
-        
         burger2.style.transform = 'rotate(-40deg)';
         burger3.style.display = 'none';
     }

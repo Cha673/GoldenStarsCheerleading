@@ -68,7 +68,7 @@
                                 </div>
                                 </div>
                         <div class="citation">
-                            <div class="p"><span class="guillemet">"</span> <?php echo($citation)?> <span class="guillemet">"</span></div>
+                            <div class="p"><?php echo($citation)?></div>
                         </div>
 
                     </div>
@@ -118,7 +118,7 @@
                             title="megaphone">
                         </div>
                         <div class="citation">
-                            <div class="p"><span class="guillemet">"</span> <?php echo($citation_juge)?> <span class="guillemet">"</span></div>
+                            <div class="p"><?php echo($citation_juge)?></div>
                         </div>
 
                     </div>
@@ -203,8 +203,8 @@
                     </div>
                 </div>
             </div>
-
-                <div class="carre_jaune_mobile mobile_only">
+            <div class=" mobile_only">
+            <div class="carre_jaune_mobile">
                     <div class="p">
                         <span id="bold">Président.e :<br></span>
                         <?php echo($president) ?><br><br>
@@ -228,6 +228,8 @@
                         <?php echo($sponsor2) ?><br>
                     </div>
                 </div>
+            </div>
+                
             </div>
         </div>
 
